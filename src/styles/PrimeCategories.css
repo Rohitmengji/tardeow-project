@@ -1,0 +1,25 @@
+.prime-categories {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.card-image {
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    margin-top: 1rem;
+}

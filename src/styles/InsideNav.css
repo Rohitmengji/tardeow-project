@@ -1,0 +1,22 @@
+
+.TarOdew{
+    height: 75vh;
+    border: 2px solid #fceeed;
+    background-color: #fceeed;
+}
+
+.brown{
+    color: #5f262c;
+}
+
+.green{
+    color: #5f794e;
+}
+
+.header{
+    justify-content: end;
+}
+
+.aligning {
+    margin-top: 6.7rem !important;
+}
