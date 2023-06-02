@@ -18,13 +18,13 @@ const OurFlagshipProducts = () => {
       image: "../assets/Ghee_1Ltr_bottle.jpg",
     },
     {
-      name: "Product 2",
+      name: "Honey",
       rating: 4,
       price: "$25.99",
       image: "../assets/Honey_1kg_Bottle.jpg",
     },
     {
-      name: "Product 3",
+      name: "Cocunut Oil",
       rating: 4.5,
       price: "$29.99",
       image: "../assets/Coconut-Oil_1L_Bottle-3.jpg",
@@ -68,81 +68,21 @@ const OurFlagshipProducts = () => {
     },
   ];
 
-  // Split the products into chunks of three for each slide
-  //   const productChunks = [];
-  //   for (let i = 0; i < products.length; i += 3) {
-  //     productChunks.push(products.slice(i, i + 3));
-  //   }
-
-  //   return (
-  //     <div className='container mb-5'>
-  //       <h2 className='text-center mb-4 brown'>Our Flagship Products</h2>
-  //       <Carousel indicators={true}>
-  //         {productChunks.map((chunk, index) => (
-  //           <Carousel.Item key={index}>
-  //             <div className='row justify-content-around'>
-  //               {chunk.map((product, i) => (
-  //                 <div className='col-sm-6 col-md-6 col-lg-3 mb-3' key={i}>
-  //                   <div
-  //                     className='card'
-  //                     style={{
-  //                       width: "300px",
-  //                       height: "320px",
-  //                       boxShadow: "0px 0px 5px 2px rgba(0, 0, 0, 0.2)",
-  //                     }}
-  //                   >
-  //                     <div className='card-body'>
-  //                       <img
-  //                         src={product.image}
-  //                         className='card-img-top'
-  //                         alt={product.name}
-  //                         style={{
-  //                           height: "210px",
-  //                           // width: "200px",
-  //                           objectFit: "cover",
-  //                         }}
-  //                       />
-  //                       <h5 className='card-title'>{product.name}</h5>
-  //                       <div className='card-text'>
-  //                         {Array.from({ length: product.rating }, (_, index) => (
-  //                           <span key={index} className='text-warning'>
-  //                             &#9733;
-  //                           </span>
-  //                         ))}
-  //                       </div>
-  //                       <p className='card-text'>{product.price}</p>
-  //                     </div>
-  //                   </div>
-  //                 </div>
-  //               ))}
-  //             </div>
-  //           </Carousel.Item>
-  //         ))}
-  //       </Carousel>
-
-  //       {/* if user clicks on dot to move slides */}
-  //       <div className='text-center mt-3'>
-  //         <ol className='carousel-indicators'>
-  //           {Array.from({ length: productChunks.length }, (_, index) => (
-  //             <li
-  //               key={index}
-  //               onClick={() => handleDotClick(index)}
-  //               className={index === activeIndex ? "active" : ""}
-  //             ></li>
-  //           ))}
-  //         </ol>
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
-  // export default OurFlagshipProducts;
-
-  // Split the products into chunks of three for each slide
+  // Create an empty array to store the product chunks
   const productChunks = [];
+
+  // Start a loop that iterates over the products array
   for (let i = 0; i < products.length; i += 3) {
-    productChunks.push(products.slice(i, i + 3));
+    // In each iteration, slice the products array to get a chunk of three products
+    // The 'i' variable represents the starting index of the chunk, and 'i + 3' represents the ending index (exclusive)
+    const chunk = products.slice(i, i + 3);
+
+    // Push the chunk of products into the productChunks array
+    productChunks.push(chunk);
   }
+
+  // After the loop, the productChunks array will contain all the chunks of products, each containing three products
+
 
   return (
     <div className='container mb-5'>
@@ -150,37 +90,30 @@ const OurFlagshipProducts = () => {
       <Carousel indicators={true} interval={null}>
         {productChunks.map((chunk, index) => (
           <Carousel.Item key={index}>
-            <div className='row justify-content-around'>
+            <div className='row justify-content-center'>
               {chunk.map((product, i) => (
-                <div className='col-sm-6 col-md-6 col-lg-3 mb-3' key={i}>
-                  <div
-                    className='card'
-                    style={{
-                      width: "300px",
-                      height: "320px",
-                      boxShadow: "0px 0px 5px 2px rgba(0, 0, 0, 0.2)",
-                    }}
-                  >
+                <div className='col-sm-6 col-md-4 col-lg-3 mb-3' key={i}>
+                  <div className='card' >
+                    <img
+                      style={{
+                        height: "250px",
+                        marginTop: "5px",
+                        objectFit: "contain",
+                      }}
+                      src={product.image}
+                      className='card-img-top'
+                      alt={product.name}
+                    />
                     <div className='card-body'>
-                      <img
-                        src={product.image}
-                        className='card-img-top'
-                        alt={product.name}
-                        style={{
-                          height: "210px",
-                          // width: "200px",
-                          objectFit: "cover",
-                        }}
-                      />
-                      <h5 className='card-title'>{product.name}</h5>
-                      <div className='card-text'>
+                      <h5 className='card-title text-center'>{product.name}</h5>
+                      <div className='card-text text-center'>
                         {Array.from({ length: product.rating }, (_, index) => (
                           <span key={index} className='text-warning'>
                             &#9733;
                           </span>
                         ))}
                       </div>
-                      <p className='card-text'>{product.price}</p>
+                      <p className='card-text text-center'>{product.price}</p>
                     </div>
                   </div>
                 </div>
@@ -190,14 +123,14 @@ const OurFlagshipProducts = () => {
         ))}
       </Carousel>
 
-      {/* if user clicks on dot to move slides */}
+
       <div className='text-center mt-3'>
         <ol className='carousel-indicators'>
-          {Array.from({ length: productChunks.length }, (_, index) => (
+          {productChunks.map((chunk, index) => (
             <li
               key={index}
               onClick={() => handleDotClick(index)}
-              className={index === activeIndex ? "active" : ""}
+              className={index === activeIndex ? "active" : "" }
             ></li>
           ))}
         </ol>

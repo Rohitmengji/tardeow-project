@@ -8,8 +8,8 @@ function Carousel() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 0,
-    slidesToScroll: 4,
+    slidesToShow: 1,
+    slidesToScroll: 4 ,
   };
 
   return (

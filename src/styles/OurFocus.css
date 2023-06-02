@@ -1,5 +1,6 @@
 .our-focus-container {
-    height: 41vh;
+    height: 37vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;

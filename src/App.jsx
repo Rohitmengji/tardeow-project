@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PrimeCategories from "./component/Categories";
 import CircleCard from "./component/CircleCard";
 import OurFlagshipProducts from "./component/OurFlagshipProducts";
-// import Carousel from "./component/Carousel";
+
 
 const App = () => {
   return (
