@@ -1,7 +1,7 @@
 // import React from "react";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import "../styles/FlagshipProduct.css";
+
 
 const OurFlagshipProducts = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -14,19 +14,19 @@ const OurFlagshipProducts = () => {
     {
       name: "A2 Desi Cow Ghee",
       rating: 5,
-      price: "₹600",
+      price: "₹650",
       image: "../assets/Ghee_1Ltr_bottle.jpg",
     },
     {
       name: "Honey",
       rating: 4,
-      price: "$25.99",
+      price: "₹500",
       image: "../assets/Honey_1kg_Bottle.jpg",
     },
     {
       name: "Cocunut Oil",
       rating: 4.5,
-      price: "$29.99",
+      price: "₹290",
       image: "../assets/Coconut-Oil_1L_Bottle-3.jpg",
     },
     // Add two more products here

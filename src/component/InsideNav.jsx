@@ -74,7 +74,7 @@ function InsideNav() {
             </NavLink>
           </div>
           <button
-            className='navbar-toggler'
+            className='navbar-toggler mt-3'
             type='button'
             onClick={handleToggle}
           >

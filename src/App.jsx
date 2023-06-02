@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PrimeCategories from "./component/Categories";
 import CircleCard from "./component/CircleCard";
 import OurFlagshipProducts from "./component/OurFlagshipProducts";
+import BulkOrderSection from "./component/BulkOrderSection";
+import CustomerFeedback from "./component/CustomerFeedback";
 
 
 const App = () => {
@@ -23,6 +25,9 @@ const App = () => {
 
       {/* Render the OurFlagshipProducts component */}
       <OurFlagshipProducts />
+      
+      <BulkOrderSection />
+      <CustomerFeedback />
     </div>
   );
 };
