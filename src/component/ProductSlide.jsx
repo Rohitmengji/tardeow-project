@@ -15,7 +15,7 @@ import {
 import "./styles.css";
 
 // import required modules
-import { Autoplay, Keyboard, Pagination, Navigation } from "swiper";
+import { Autoplay, Keyboard, Navigation, Mousewheel } from "swiper";
 
 function Cards() {
   const products = [
@@ -23,38 +23,39 @@ function Cards() {
       name: "A2 Desi Cow Ghee",
       rating: 5,
       price: "₹650",
-      image: "../assets/Ghee_1Ltr_bottle.jpg",
+      image: "../assets/Ghee_1Ltr_bottlee.jpg",
     },
     {
       name: "Honey",
       rating: 4,
       price: "₹500",
-      image: "../assets/Honey_1kg_Bottle.jpg",
+      image: "../assets/Honey_1kg_Bottlee.jpg",
     },
     {
       name: "Cocunut Oil",
       rating: 4.5,
       price: "₹290",
-      image: "../assets/Coconut-Oil_1L_Bottle-3.jpg",
+      image: "../assets/coconut-oil.webp",
     },
     {
-      name: "A2 Desi Cow Ghee",
-      rating: 5,
-      price: "₹650",
-      image: "../assets/Ghee_1Ltr_bottle.jpg",
+      name: "Groundnut Oil",
+      rating: 4.5,
+      price: "₹290",
+      image: "../assets/groundnutoil.jpg",
     },
     {
-      name: "Honey",
+      name: "Mustard Oil",
       rating: 4,
-      price: "₹500",
-      image: "../assets/Honey_1kg_Bottle.jpg",
+      price: "₹290",
+      image: "../assets/mustard-oil.webp",
     },
     {
-      name: "Cocunut Oil",
-      rating: 4.5,
+      name: "Groundnut Oil",
+      rating: 4,
       price: "₹290",
-      image: "../assets/Coconut-Oil_1L_Bottle-3.jpg",
+      image: "../assets/groundnutoil.jpg",
     },
+
     // Add more products here
     // ...
   ];
@@ -68,64 +69,39 @@ function Cards() {
     }
     return stars;
   };
-
   return (
     <div className='container mb-5'>
       <>
         <h2 className='text-center brown mb-4'>Our Flagship Products</h2>
       </>
       <Swiper
+        mousewheel={true}
         navigation={true}
-        slidesPerView={3}
-        spaceBetween={10}
+        slidesPerView={2} // Display two cards per slide
         keyboard={{
           enabled: true,
         }}
         autoplay={{
-          delay: 4000,
-        }}
-        pagination={{
-          clickable: true,
+          delay: 5000,
         }}
         breakpoints={{
-          200: {
-            slidesPerView: 1,
-            pagination: false,
-          },
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: false,
-          },
-          600: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 45,
-            pagination: false,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 80,
-            pagination: false,
-          },
+          720: {
+            slidesPerView : 3
+          }
         }}
-        modules={[Keyboard, Pagination, Navigation, Autoplay]}
+        modules={[Keyboard, Navigation, Autoplay, Mousewheel]}
         className='mySwiper'
-        autoHeight={true}
       >
         {products.map((product, index) => (
           <SwiperSlide key={index}>
-            <Card className='mx-2 '>
+            <Card className='mx-2'>
               <Card.Body className='d-flex flex-column justify-content-between'>
                 <div className='text-center'>
                   <Card.Img
                     style={{
-                      width: "18rem",
-                      maxHeight: "260px",
-                      objectFit: "fill",
+                      width: "100%",
+                      height: "200px",
+                      objectFit: "cover",
                     }}
                     variant='top'
                     src={product.image}

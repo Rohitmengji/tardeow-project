@@ -32,7 +32,7 @@ const CustomerFeedback = () => {
     <div className='customer-feedback-container box'>
       <div className='container'>
         <div className='row'>
-          <div className='col-12 col-md-11'>
+          <div className='col-12 '>
             <div className='text-center mb-4'>
               <h2 className='mb-3 mt-3 text-white'>What Our Customers Say</h2>
             </div>

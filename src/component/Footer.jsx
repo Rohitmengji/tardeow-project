@@ -47,22 +47,18 @@ const Footer = () => {
 
   return (
     <>
-      <div className='container-fluid d-flex align-item-center bgcolor'>
-        <footer className='row row-cols-1 row-cols-sm-2 row-cols-md-5 my-2 py-5  mx-3'>
+      <div className='container-fluid bgcolor text-justify p-4'>
+        <footer className='row row-cols-1 row-cols-2 row-cols-sm-2 row-cols-md-5  mx-2'>
           <div className='col mb-2'>
-            <NavLink
-              to='/'
-              className='d-flex align-items-center mb-3 link-dark text-decoration-none'
-            >
+            <NavLink to='/' className='mb-3 link-dark text-decoration-none'>
               <img src='../assets/logo.png' alt='logo' />
             </NavLink>
-            <p className='text-wrap ms-1 text-align brown fs-5 fw-medium'>
-              make sure to include the necessary stylesheets and dependencies in
-              your project for the icons dependencies in your project for the
-              icons and styling to work correctly.
+            <p className='brown fw-medium text-justify'>
+              make sure to include the necessary for the icons dependencies in
+              your project for the icons and styling to work correctly.
             </p>
 
-            <div className='social-media d-flex justify-content-between me-5 p-2'>
+            <div className='social-media d-flex justify-content-between align-items-baseline mx-3'>
               <NavLink to='https://www.facebook.com' target='_blank'>
                 <img
                   src={
@@ -102,12 +98,13 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='col mb-3'></div>
+          <div className='row'></div>
 
-          <div className='col mb-3  fw-medium'>
-            <h3 className='brown'>Useful Links</h3>
-            <ul className='nav flex-column'>
-              <li className='nav-item mb-2  '>
+          <div className='col'>
+            <h3 className='brown fw-bold mb-3'>Useful Links</h3>
+            <hr className='footer-hr' />
+            <ul className='nav flex-column fw-medium d-flex'>
+              <li className='nav-item mb-1  '>
                 <NavLink to='/' className='nav-link p-0 greencol  '>
                   Best Deals
                 </NavLink>
@@ -130,9 +127,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='col mt-4 mb-1'>
-            <ul className='nav flex-column fw-medium'>
-              <li className='nav-item mb-2'>
+          <div className='col d-flex justify-content-start '>
+            <ul className='nav flex-column m-5 fw-medium'>
+              <li className='nav-item mb-1'>
                 <NavLink to='/' className='nav-link p-0 mt-3 greencol'>
                   My Account
                 </NavLink>
@@ -157,14 +154,15 @@ const Footer = () => {
           </div>
 
           <div className='col'>
-            <h2 className='brown'>Contact Us</h2>
+            <h2 className='brown fw-bold'>Contact Us</h2>
+            <hr className='footer-hr' />
             <ul className='nav flex-column col-lg-12'>
               <li className='nav-item mb-2 d-flex align-items-center justify-content-space'>
                 <Link to='https://maps.google.com' className='nav-link p-0'>
                   <img
                     src={
                       hoverState.isLocationHovered
-                        ? "../assets/Group 44-hover.png"
+                        ? "../assets/Group 603.png"
                         : "../assets/Group 44.png"
                     }
                     alt='location'
@@ -172,16 +170,16 @@ const Footer = () => {
                     onMouseLeave={() => handleHover("isLocationHovered", false)}
                   />
                 </Link>
-                <p className='ps-2 pt-1 greencol fw-medium'>
-                  Lorem ipsum, dolor sit amet consectetur adipising elit
-                </p>
+                <span className='ps-2 pt-1 greencol fw-medium'>
+                  Lorem ipsum, dolor sit amet consectetur elit
+                </span>
               </li>
               <li className='d-flex mb-2 align-items-left'>
                 <Link to='mailto:tarodew@gmail.com' className='nav-link p-0'>
                   <img
                     src={
                       hoverState.isEmailHovered
-                        ? "../assets/Group 45-hover.png"
+                        ? "../assets/Group 604.png"
                         : "../assets/Group 45.png"
                     }
                     alt='email'
@@ -198,7 +196,7 @@ const Footer = () => {
                   <img
                     src={
                       hoverState.isPhoneNumberHovered
-                        ? "../assets/Group 46-hover.png"
+                        ? "../assets/Group 605.png"
                         : "../assets/Group 46.png"
                     }
                     alt='phoneNumber'

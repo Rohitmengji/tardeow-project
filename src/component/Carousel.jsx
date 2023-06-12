@@ -22,14 +22,14 @@ const CarouselComponent = () => {
         </div>
         <div>
           <img
-            src=''
+            src='../assets/products_1.png'
             alt='Products'
             className='carousel-image'
           />
         </div>
         <div>
           <img
-            src=''
+            src='../assets/products_1.png'
             alt='Products'
             className='carousel-image'
           />
