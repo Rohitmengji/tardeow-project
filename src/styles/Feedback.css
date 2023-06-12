@@ -1,0 +1,13 @@
+.customer-feedback-container {
+    background-image: url("../assets/Group 591.jpg");
+    background-size: cover;
+    background-position: center;
+background-blend-mode :darken;
+overflow-wrap: normal;
+}
+
+.feedbackmsg{
+    
+    max-height: auto;
+    width: auto;
+}

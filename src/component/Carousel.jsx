@@ -1,26 +1,42 @@
-// import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "../styles/Carousel.css";
 
-const Carousel = () => {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
+const CarouselComponent = () => {
   return (
-    <div className='container'>
-      <Slider {...settings}>
-        <div>
-          <img width={'490px'} src='../assets/products_1.png' alt='Products' />
+    <div>
+      <Carousel
+        showArrows={false}
+        showThumbs={false}
+        showStatus={false}
+        emulateTouch={false}
+        showIndicators={true}
+      >
+        <div className='mb-5'>
+          <img
+            style={{ height: "359px" }}
+            src='../assets/products_1.png'
+            alt='Products'
+            className='carousel-image'
+          />
         </div>
-      </Slider>
+        <div>
+          <img
+            src=''
+            alt='Products'
+            className='carousel-image'
+          />
+        </div>
+        <div>
+          <img
+            src=''
+            alt='Products'
+            className='carousel-image'
+          />
+        </div>
+      </Carousel>
     </div>
   );
 };
 
-export default Carousel;
+export default CarouselComponent;

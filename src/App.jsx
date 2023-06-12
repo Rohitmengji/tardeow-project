@@ -1,12 +1,16 @@
 import Navbar from "./component/Navbar";
 import InsideNav from "./component/InsideNav";
-import "bootstrap/dist/css/bootstrap.min.css";
 import PrimeCategories from "./component/Categories";
 import CircleCard from "./component/CircleCard";
-import OurFlagshipProducts from "./component/OurFlagshipProducts";
+
+import ProductSlide from "./component/ProductSlide";
+
 import BulkOrderSection from "./component/BulkOrderSection";
+
 import CustomerFeedback from "./component/CustomerFeedback";
 
+import ImageDisplay from "./component/ImageDisplay";
+import Footer from "./component/Footer";
 
 const App = () => {
   return (
@@ -24,10 +28,12 @@ const App = () => {
       <CircleCard />
 
       {/* Render the OurFlagshipProducts component */}
-      <OurFlagshipProducts />
-      
+      <ProductSlide />
+
       <BulkOrderSection />
       <CustomerFeedback />
+      <ImageDisplay />
+      <Footer />
     </div>
   );
 };

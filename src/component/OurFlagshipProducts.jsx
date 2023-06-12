@@ -1,7 +1,5 @@
-// import React from "react";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-
 
 const OurFlagshipProducts = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -83,7 +81,6 @@ const OurFlagshipProducts = () => {
 
   // After the loop, the productChunks array will contain all the chunks of products, each containing three products
 
-
   return (
     <div className='container mb-5'>
       <h2 className='text-center mb-4 brown'>Our Flagship Products</h2>
@@ -93,7 +90,7 @@ const OurFlagshipProducts = () => {
             <div className='row justify-content-center'>
               {chunk.map((product, i) => (
                 <div className='col-sm-6 col-md-4 col-lg-3 mb-3' key={i}>
-                  <div className='card' >
+                  <div className='card'>
                     <img
                       style={{
                         height: "250px",
@@ -123,14 +120,13 @@ const OurFlagshipProducts = () => {
         ))}
       </Carousel>
 
-
       <div className='text-center mt-3'>
         <ol className='carousel-indicators'>
           {productChunks.map((chunk, index) => (
             <li
               key={index}
               onClick={() => handleDotClick(index)}
-              className={index === activeIndex ? "active" : "" }
+              className={index === activeIndex ? "active" : ""}
             ></li>
           ))}
         </ol>

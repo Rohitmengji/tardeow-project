@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/InsideNav.css";
-import Carousel from "./Carousel";
+import CarouselComponent from "./Carousel";
 
 const logo = "../assets/logo.png";
 
@@ -17,13 +17,13 @@ function InsideNav() {
       <nav className='navbar navbar-expand-lg navbar-light bg-color'>
         <div className='container'>
           <NavLink className='navbar-brand' to='/'>
-            <img src={logo} alt='Tarodew' />
+            <img style={{ objectFit: "cover" }} src={logo} alt='Tarodew' />
           </NavLink>
 
           <div
             className={`collapse navbar-collapse ${
               isCollapsed ? "" : "show"
-            } justify-content-center`}
+            } justify-content-center mx-2`}
             id='navbarNav'
           >
             <ul className='navbar-nav'>
@@ -32,7 +32,7 @@ function InsideNav() {
                   <strong className='brown'>BEST DEALS</strong>
                 </NavLink>
               </li>
-              <li className='nav-item'>
+              <li className='nav-item '>
                 <NavLink className='nav-link' to='/oils'>
                   OILS
                 </NavLink>
@@ -55,26 +55,28 @@ function InsideNav() {
             </ul>
           </div>
 
-          <div className='search-bar mx-2 mt-3'>
+          <div>{/* heart logo */}</div>
+
+          <div className='search-bar mx-2 mb-1'>
             {/* Search bar component */}
             <NavLink to='/search'>
               <img src='../assets/Icon ionic-ios-search.png' alt='search' />
             </NavLink>
           </div>
-          <div className='profile-logo mx-2 mt-3'>
+          <div className='profile-logo mx-2 mb-1'>
             {/* Profile logo component */}
             <NavLink>
               <img src='../assets/user.png' width={"19px"} alt='user' />
             </NavLink>
           </div>
-          <div className='cart-logo mx-2 mt-3'>
+          <div className='cart-logo mx-2 mb-1'>
             {/* Cart logo component */}
             <NavLink to='/cart'>
               <img src='../assets/Icon feather-shopping-cart.png' alt='cart' />
             </NavLink>
           </div>
           <button
-            className='navbar-toggler mt-3'
+            className='navbar-toggler mb-1'
             type='button'
             onClick={handleToggle}
           >
@@ -83,20 +85,23 @@ function InsideNav() {
         </div>
       </nav>
 
-      <div className='container mt-5'>
+      <div className='container '>
         <div className='row'>
           <div className='col-md-4 col-lg-4 aligning'>
             <div className='header'>
               <h2>
                 <span className='green'>ENJOY THE BENEFITS OF</span>{" "}
-                <strong className='brown'>COLD PRESSED OILS</strong>
+                <strong className='brown bold'>COLD PRESSED OILS</strong>
               </h2>
-              <button className='btn btn-success btn-sm mt-2'>Shop Now</button>
+              <NavLink to='/shopnow' className='btn btn-success btn-sm mt-2'>
+                Shop Now
+              </NavLink>
             </div>
           </div>
-          <div className='col-md-8 col-lg-8 mt-4'>
-            <div className='text-right'>
-              <Carousel />
+          <div className='col-md-8 col-lg-6 col-sm-12 '>
+            {/* Carousel imported */}
+            <div>
+              <CarouselComponent />
             </div>
           </div>
         </div>

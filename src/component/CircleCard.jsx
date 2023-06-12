@@ -1,48 +1,101 @@
-// import React from "react";
+import { useState } from "react";
 import "../styles/OurFocus.css";
 
 const CircleCard = () => {
+  const [hoveredCard, setHoveredCard] = useState(null);
+
+  const handleCardMouseEnter = (index) => {
+    setHoveredCard(index);
+  };
+
+  const handleCardMouseLeave = () => {
+    setHoveredCard(null);
+  };
+
+  const circleCards = [
+    {
+      name: "Traditional",
+      imageSrc: "../assets/Group 593.png",
+      hoverImageSrc: "../assets/Group 594.png",
+    },
+    {
+      name: "Natural",
+      imageSrc: "../assets/Group 595.png",
+      hoverImageSrc: "../assets/Group 596.png",
+    },
+    {
+      name: "No Refining",
+      imageSrc: "../assets/Group 597.png",
+      hoverImageSrc: "../assets/Group 598.png",
+    },
+    
+  ];
+
   return (
-    <div
-      className='container-fluid our-focus-container'
-      style={{ backgroundColor: "#edf0f5" }}
-    >
-      <h2 className='mb-3 mt-4 text-center brown'>Our Focus</h2>
+    <div className='our-focus-container mb-5'>
+      <h2 className='mb-4 mt-4 text-center brown'>Our Focus</h2>
 
-      <div className='d-flex justify-content-around '>
-        <div className='circle-card'>
-          <div className='circle dotted-border'>
-            <img
-              src='../assets/Group 593.png'
-              alt='Traditional'
-              className='circle-logo'
-            />
+      <div className='row justify-content-around'>
+        {circleCards.slice(0, 3).map((circleCard, index) => (
+          <div
+            key={index}
+            className='col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center'
+            onMouseEnter={() => handleCardMouseEnter(index)}
+            onMouseLeave={handleCardMouseLeave}
+          >
+            <div
+              className={`circle-card${
+                hoveredCard === index ? " hovered" : ""
+              }`}
+            >
+              <div className='circle dotted-border'>
+                <img
+                  src={
+                    hoveredCard === index
+                      ? circleCard.hoverImageSrc
+                      : circleCard.imageSrc
+                  }
+                  alt={circleCard.name}
+                  className='circle-logo'
+                />
+              </div>
+              <h6 className='circle-name'>{circleCard.name}</h6>
+            </div>
           </div>
-          <h6 className='circle-name'>Traditional</h6>
-        </div>
-
-        <div className='circle-card'>
-          <div className='circle '>
-            <img
-              src='../assets/Group 596.png'
-              alt='Natural'
-              className='circle-logo'
-            />
-          </div>
-          <h6 className='circle-name'>Natural</h6>
-        </div>
-
-        <div className='circle-card'>
-          <div className='circle '>
-            <img
-              src='../assets/Group 597.png'
-              alt='No Refining'
-              className='circle-logo'
-            />
-          </div>
-          <h6 className='circle-name'>No Refining</h6>
-        </div>
+        ))}
       </div>
+
+      {/* {hoveredCard !== null && (
+        <div className='row justify-content-around mt-4'>
+          {circleCards.slice(3, 6).map((circleCard, index) => (
+            <div
+              key={index}
+              className='col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center'
+              onMouseEnter={() => handleCardMouseEnter(index + 3)}
+              onMouseLeave={handleCardMouseLeave}
+            >
+              <div
+                className={`circle-card${
+                  hoveredCard === index + 3 ? " hovered" : ""
+                }`}
+              >
+                <div className='circle dotted-border'>
+                  <img
+                    src={
+                      hoveredCard === index + 3
+                        ? circleCard.hoverImageSrc
+                        : circleCard.imageSrc
+                    }
+                    alt={circleCard.name}
+                    className='circle-logo'
+                  />
+                </div>
+                <h6 className='circle-name'>{circleCard.name}</h6>
+              </div>
+            </div>
+          ))}
+        </div>
+      )} */}
     </div>
   );
 };

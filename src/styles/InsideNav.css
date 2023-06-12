@@ -1,7 +1,13 @@
 
 .TarOdew {
-    /* min-height: 90vh; */
+    padding: 20px;
+    /* height: 80vh; */
     background-color: #fceeed;
+}
+
+.bold{
+    font-size: 27px;
+    font-weight: 800;
 }
 
 .brown {
@@ -9,45 +15,16 @@
 }
 
 .green {
-    color: #5f794e;
+    color: #637e52;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: rem; */
 }
 
 
-    .aligning {
-            margin-top: 8.5rem !important;
+.aligning {
+            margin-top: 5.5rem !important;
         }
 
-
-@media screen and (max-width: 767px) {
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .navbar-nav .nav-link {
-        text-align: center;
-    }
-
-    .navbar-toggler {
-        margin-top: 20px;
-        display: hidden;
-    }
-
-        .header {
-            text-align: center;
-            
-        }
-
-    .collapse.navbar-collapse {
-        margin-top: 1rem;
-    }
-
-    .col-md-4.aligning,
-    .col-md-8 {
-        text-align: center;
-    }
-}
