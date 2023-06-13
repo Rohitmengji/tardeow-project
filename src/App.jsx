@@ -2,19 +2,16 @@ import Navbar from "./component/Navbar";
 import InsideNav from "./component/InsideNav";
 import PrimeCategories from "./component/Categories";
 import CircleCard from "./component/CircleCard";
-
 import ProductSlide from "./component/ProductSlide";
-
 import BulkOrderSection from "./component/BulkOrderSection";
-
 import CustomerFeedback from "./component/CustomerFeedback";
-
 import ImageDisplay from "./component/ImageDisplay";
 import Footer from "./component/Footer";
+import "./App.css";
 
 const App = () => {
   return (
-    <div>
+    <div className='app-container'>
       {/* Render the Navbar component */}
       <Navbar />
 

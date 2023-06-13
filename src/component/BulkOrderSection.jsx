@@ -1,4 +1,3 @@
-// import React from "react";
 
 const BulkOrderSection = () => {
   return (
@@ -7,8 +6,8 @@ const BulkOrderSection = () => {
         <div className='row'>
           <div className='col-12 p-0 position-relative'>
             <img
-              height={'370px'}
-              style={{objectFit :'cover'}}
+              height={"370px"}
+              style={{ objectFit: "cover" }}
               src='../../public/assets/Group 601.png'
               alt='Background'
               className='w-100'
@@ -19,8 +18,9 @@ const BulkOrderSection = () => {
                   color: "#714547",
                   position: "relative",
                   zIndex: 1,
-                  textAlign: "left",
+                  textAlign: "center",
                   paddingLeft: "1.5rem",
+                  paddingRight: "1.5rem", // Added paddingRight for responsive alignment
                 }}
                 className='text-center text-lg-left'
               >

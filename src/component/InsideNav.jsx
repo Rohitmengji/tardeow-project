@@ -13,11 +13,11 @@ function InsideNav() {
   };
 
   return (
-    <div className='TarOdew'>
+    <div className='TarOdew p-5'>
       <nav className='navbar navbar-expand-lg navbar-light bg-color'>
-        <div className='container'>
+        <div className='container col-lg-10'>
           <NavLink className='navbar-brand' to='/'>
-            <img style={{ objectFit: "cover" }} src={logo} alt='Tarodew' />
+            <img src={logo} alt='Tarodew' />
           </NavLink>
 
           <div
@@ -56,32 +56,36 @@ function InsideNav() {
           </div>
 
           <div>{/* heart logo */}</div>
-
-          <div className='search-bar mx-2 mb-1'>
-            {/* Search bar component */}
-            <NavLink to='/search'>
-              <img src='../assets/Icon ionic-ios-search.png' alt='search' />
-            </NavLink>
+          <div className='d-flex '>
+            <div className='search-bar mx-2 mb-1'>
+              {/* Search bar component */}
+              <NavLink to='/search'>
+                <img src='../assets/Icon ionic-ios-search.png' alt='search' />
+              </NavLink>
+            </div>
+            <div className='profile-logo mx-2 mb-1'>
+              {/* Profile logo component */}
+              <NavLink>
+                <img src='../assets/user.png' width={"19px"} alt='user' />
+              </NavLink>
+            </div>
+            <div className='cart-logo mx-2 mb-1'>
+              {/* Cart logo component */}
+              <NavLink to='/cart'>
+                <img
+                  src='../assets/Icon feather-shopping-cart.png'
+                  alt='cart'
+                />
+              </NavLink>
+            </div>
+            <button
+              className='navbar-toggler mb-1'
+              type='button'
+              onClick={handleToggle}
+            >
+              <span className='navbar-toggler-icon'></span>
+            </button>
           </div>
-          <div className='profile-logo mx-2 mb-1'>
-            {/* Profile logo component */}
-            <NavLink>
-              <img src='../assets/user.png' width={"19px"} alt='user' />
-            </NavLink>
-          </div>
-          <div className='cart-logo mx-2 mb-1'>
-            {/* Cart logo component */}
-            <NavLink to='/cart'>
-              <img src='../assets/Icon feather-shopping-cart.png' alt='cart' />
-            </NavLink>
-          </div>
-          <button
-            className='navbar-toggler mb-1'
-            type='button'
-            onClick={handleToggle}
-          >
-            <span className='navbar-toggler-icon'></span>
-          </button>
         </div>
       </nav>
 
@@ -90,7 +94,7 @@ function InsideNav() {
           <div className='col-md-4 col-lg-4 aligning'>
             <div className='header'>
               <h2>
-                <span className='green'>ENJOY THE BENEFITS OF</span>{" "}
+                <span className='green d-block'>ENJOY THE BENEFITS OF</span>
                 <strong className='brown bold'>COLD PRESSED OILS</strong>
               </h2>
               <NavLink to='/shopnow' className='btn btn-success btn-sm mt-2'>

@@ -22,6 +22,7 @@ const CarouselComponent = () => {
         </div>
         <div>
           <img
+            style={{ height: "359px" }}
             src='../assets/products_1.png'
             alt='Products'
             className='carousel-image'
@@ -29,6 +30,7 @@ const CarouselComponent = () => {
         </div>
         <div>
           <img
+            style={{ height: "359px" }}
             src='../assets/products_1.png'
             alt='Products'
             className='carousel-image'

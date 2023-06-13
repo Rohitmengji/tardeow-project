@@ -1,7 +1,5 @@
 
 .TarOdew {
-    padding: 20px;
-    /* height: 80vh; */
     background-color: #fceeed;
 }
 
@@ -26,5 +24,6 @@
 
 .aligning {
             margin-top: 5.5rem !important;
+            text-indent: 2px;
         }
 

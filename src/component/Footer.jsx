@@ -48,17 +48,17 @@ const Footer = () => {
   return (
     <>
       <div className='container-fluid bgcolor text-justify p-4'>
-        <footer className='row row-cols-1 row-cols-2 row-cols-sm-2 row-cols-md-5  mx-2'>
-          <div className='col mb-2'>
+        <footer className='row row-cols-1  row-cols-sm-2 row-cols-md-5 '>
+          <div className='container mb-2'>
             <NavLink to='/' className='mb-3 link-dark text-decoration-none'>
               <img src='../assets/logo.png' alt='logo' />
             </NavLink>
-            <p className='brown fw-medium text-justify'>
+            <p className='brown fw-medium w-100'>
               make sure to include the necessary for the icons dependencies in
               your project for the icons and styling to work correctly.
             </p>
 
-            <div className='social-media d-flex justify-content-between align-items-baseline mx-3'>
+            <div className='social-media'>
               <NavLink to='https://www.facebook.com' target='_blank'>
                 <img
                   src={
@@ -69,6 +69,7 @@ const Footer = () => {
                   alt='Facebook'
                   onMouseEnter={handleFacebookHover}
                   onMouseLeave={handleFacebookMouseLeave}
+                  style={{ marginRight: "10px" }} // Add margin to the right
                 />
               </NavLink>
               <NavLink to='https://www.twitter.com' target='_blank'>
@@ -81,6 +82,7 @@ const Footer = () => {
                   alt='Twitter'
                   onMouseEnter={handleTwitterHover}
                   onMouseLeave={handleTwitterMouseLeave}
+                  style={{ marginRight: "10px" }} // Add margin to the right
                 />
               </NavLink>
               <NavLink to='https://www.linkedin.com' target='_blank'>
@@ -93,6 +95,7 @@ const Footer = () => {
                   alt='LinkedIn'
                   onMouseEnter={handleLinkedInHover}
                   onMouseLeave={handleLinkedInMouseLeave}
+                  style={{ marginRight: "10px" }} // Add margin to the right
                 />
               </NavLink>
             </div>
@@ -100,61 +103,74 @@ const Footer = () => {
 
           <div className='row'></div>
 
-          <div className='col'>
-            <h3 className='brown fw-bold mb-3'>Useful Links</h3>
-            <hr className='footer-hr' />
-            <ul className='nav flex-column fw-medium d-flex'>
-              <li className='nav-item mb-1  '>
-                <NavLink to='/' className='nav-link p-0 greencol  '>
-                  Best Deals
-                </NavLink>
-              </li>
-              <li className='nav-item mb-2 green'>
-                <NavLink to='/' className='nav-link p-0 greencol '>
-                  Oils
-                </NavLink>
-              </li>
-              <li className='nav-item mb-2'>
-                <NavLink to='/' className='nav-link p-0 greencol'>
-                  Honey
-                </NavLink>
-              </li>
-              <li className='nav-item mb-2'>
-                <NavLink to='/' className='nav-link p-0 greencol'>
-                  Ghee
-                </NavLink>
-              </li>
-            </ul>
+          <div className='row'>
+            <div className='col'>
+              <h3 className=' brown fw-bold mb-3 mt-2'>Useful Links</h3>
+              <hr className='footer-hr' />
+              <table cellPadding={2}>
+                <thead>
+                  <tr>
+                    <td className='text-right'>
+                      <NavLink to='/' className='nav-link  greencol'>
+                        Best Deals
+                      </NavLink>
+                    </td>
+                    <td style={{ paddingLeft: "38px" }} className='text-end'>
+                      <NavLink to='/' className='nav-link  greencol'>
+                        My Account
+                      </NavLink>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <NavLink to='/' className='nav-link p-0 greencol'>
+                        Oils
+                      </NavLink>
+                    </td>
+                    <td className='text-end'>
+                      <NavLink to='/' className='nav-link mt-1 greencol'>
+                        ABOUT
+                      </NavLink>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <NavLink
+                        to='/'
+                        className='nav-link p-0 greencol'
+                      >
+                        Honey
+                      </NavLink>
+                    </td>
+                    <td className='text-end'>
+                      <NavLink to='/' className='nav-link p-0 greencol'>
+                        BLOG
+                      </NavLink>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <NavLink to='/' className='nav-link p-0 greencol'>
+                        Ghee
+                      </NavLink>
+                    </td>
+                    <td className='text-end'>
+                      <NavLink to='/' className='nav-link p-0 greencol'>
+                        CONTACT
+                      </NavLink>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
-          <div className='col d-flex justify-content-start '>
-            <ul className='nav flex-column m-5 fw-medium'>
-              <li className='nav-item mb-1'>
-                <NavLink to='/' className='nav-link p-0 mt-3 greencol'>
-                  My Account
-                </NavLink>
-              </li>
-              <li className='nav-item mb-2'>
-                <NavLink to='/' className='nav-link p-0 greencol'>
-                  ABOUT
-                </NavLink>
-              </li>
-              <li className='nav-item mb-2'>
-                <NavLink to='/' className='nav-link p-0 greencol'>
-                  BLOG
-                </NavLink>
-              </li>
-
-              <li className='nav-item mb-2'>
-                <NavLink to='/' className='nav-link p-0 greencol'>
-                  CONTACT
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+          <div className="row"></div>
 
           <div className='col'>
-            <h2 className='brown fw-bold'>Contact Us</h2>
+            <h2 className='brown fw-bold mt-2'>Contact Us</h2>
             <hr className='footer-hr' />
             <ul className='nav flex-column col-lg-12'>
               <li className='nav-item mb-2 d-flex align-items-center justify-content-space'>

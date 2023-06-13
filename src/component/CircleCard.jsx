@@ -32,7 +32,7 @@ const CircleCard = () => {
   ];
 
   return (
-    <div className='our-focus-container mb-5'>
+    <div className='our-focus-container p-3 mb-5'>
       <h2 className='mb-4 mt-4 text-center brown'>Our Focus</h2>
 
       <div className='row justify-content-around'>

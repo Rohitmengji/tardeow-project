@@ -12,7 +12,7 @@ const Categories = () => {
                 loading='lazy'
                 style={{
                   objectFit: "contain",
-                  height: "270px",
+                  height: "239px",
                   width: "100%",
                   borderRadius: "20%",
                 }}
@@ -21,7 +21,7 @@ const Categories = () => {
                 className='card-image'
               />
             </div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex mt-3 justify-content-center'>
               <h5>Oils</h5>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Categories = () => {
               <img
                 style={{
                   objectFit: "contain",
-                  height: "270px",
+                  height: "239px",
                   width: "100%",
                   borderRadius: "20%",
                 }}
@@ -40,7 +40,7 @@ const Categories = () => {
                 className='card-image'
               />
             </div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex mt-3  justify-content-center'>
               <h5>Honey</h5>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Categories = () => {
               <img
                 style={{
                   objectFit: "contain",
-                  height: "270px",
+                  height: "239px",
                   width: "100%",
                   borderRadius: "20%",
                 }}
@@ -59,7 +59,7 @@ const Categories = () => {
                 className='card-image'
               />
             </div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex mt-3  justify-content-center'>
               <h5>Ghee</h5>
             </div>
           </div>

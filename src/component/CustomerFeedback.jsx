@@ -1,7 +1,7 @@
 // import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import '../styles/Feedback.css'
+import "../styles/Feedback.css";
 
 const CustomerFeedback = () => {
   const feedbackData = [
@@ -37,11 +37,10 @@ const CustomerFeedback = () => {
               <h2 className='mb-3 mt-3 text-white'>What Our Customers Say</h2>
             </div>
             <div
-              className="container w-50 mb-4"
+              className='container col-7 col-lg-8 col-md-7 flex-column  col-sm-12  mb-4'
               style={{
                 borderRadius: "30px",
-                background: "#f5f6f6",
-                // padding: "0.5rem",
+                background: "#f5f5f5",
                 textAlign: "center",
               }}
             >
@@ -78,38 +77,43 @@ const CustomerFeedback = () => {
                 }}
               >
                 {feedbackData.map((feedback, index) => (
-                  <div key={index}  className='feedbackmsg'>
-                    <img
-                      className='d-block'
-                      src='../assets/Group 54.png'
-                      alt='Quote Icon'
-                      style={{
-                        objectFit: "contain",
-                        height: "80px",
-                        width: "58px",
-                      }}
-                    />
-
-                    <p
-                      className='text-wrap text-truncate'
-                      style={{
-                        fontSize: "20px",
-                        fontFamily: "sans-serif",
-                        wordSpacing: "2px",
-                      }}
-                    >
-                      {feedback.message}
-                    </p>
-                    <p
-                      style={{
-                        fontWeight: "bold",
-                        color: "#456c33",
-                        margin: "35px auto",
-                      }}
-                    >
-                      <hr />
-                      {feedback.author}
-                    </p>
+                  <div key={index} className='feedbackmsg'>
+                    <div className='qoute-img'>
+                      <img
+                        className='d-block'
+                        src='../assets/Group 54.png'
+                        alt='Quote Icon'
+                        style={{
+                          objectFit: "contain",
+                          height: "80px",
+                          width: "58px",
+                          objectPosition: "right center",
+                        }}
+                      />
+                    </div>
+                    <div className='feedback-msg'>
+                      <p
+                        className='text-wrap text-truncate'
+                        style={{
+                          fontSize: "20px",
+                          fontFamily: "sans-serif",
+                          wordSpacing: "2px",
+                        }}
+                      >
+                        {feedback.message}
+                      </p>
+                    </div>
+                    <div className='feedback-author'>
+                      <p
+                        style={{
+                          fontWeight: "bold",
+                          color: "#456c33",
+                          margin: "35px auto",
+                        }}
+                      >
+                        {feedback.author}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </Carousel>
