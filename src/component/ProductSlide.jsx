@@ -6,11 +6,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import {
-  faSearch,
-  faHeart,
-  faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/styles.css";
 
@@ -19,6 +14,9 @@ import { Autoplay, Keyboard, Navigation, Mousewheel } from "swiper";
 import { useState } from "react";
 
 function ProductSlide() {
+  const search = "../assets/Icon ionic-ios-search-1.png";
+  const heartIcon = "../assets/Group 27.png";
+  const cartIcon = "../assets/Icon feather-shopping-cart-1.png";
   const [hoverIndex, setHoverIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -86,7 +84,6 @@ function ProductSlide() {
       </>
       <Swiper
         mousewheel={true}
-        navigation={true}
         slidesPerView={2} // Display two cards per slide
         keyboard={{
           enabled: true,
@@ -114,11 +111,15 @@ function ProductSlide() {
         {products.map((product, index) => (
           <SwiperSlide key={index}>
             <div
-              className='container'
+              className=' '
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
             >
-              <Card className='mx-2 content'>
+              <Card
+                className='mx-3 content'
+                border='0'
+                style={{ boxShadow: "revert-layer" }}
+              >
                 <Card.Body className='d-flex flex-column justify-content-between'>
                   <div className='content-overlay'></div>
                   <div className='text-center'>
@@ -134,14 +135,14 @@ function ProductSlide() {
                     />
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text>{renderStars(product.rating)}</Card.Text>
-                    <Card.Text>Price: {product.price}</Card.Text>
+                    <Card.Text style={{marginBottom : '9px'}}>Price: {product.price}</Card.Text>
                   </div>
 
                   {hoverIndex === index && (
                     <div className='middle'>
-                      <FontAwesomeIcon icon={faSearch} className='icon' />
-                      <FontAwesomeIcon icon={faHeart} className='icon' />
-                      <FontAwesomeIcon icon={faShoppingCart} className='icon' />
+                      <img src={search} className='icon' />
+                      <img src={heartIcon} className='icon' />
+                      <img src={cartIcon} className='icon' />
                     </div>
                   )}
                 </Card.Body>

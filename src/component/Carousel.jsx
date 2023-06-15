@@ -5,38 +5,41 @@ import "../styles/Carousel.css";
 const CarouselComponent = () => {
   return (
     <div>
-      <Carousel
-        showArrows={false}
-        showThumbs={false}
-        showStatus={false}
-        emulateTouch={false}
-        showIndicators={true}
-      >
-        <div className='mb-5'>
-          <img
-            style={{ height: "359px" }}
-            src='../assets/products_1.png'
-            alt='Products'
-            className='carousel-image'
-          />
-        </div>
-        <div>
-          <img
-            style={{ height: "359px" }}
-            src='../assets/products_1.png'
-            alt='Products'
-            className='carousel-image'
-          />
-        </div>
-        <div>
-          <img
-            style={{ height: "359px" }}
-            src='../assets/products_1.png'
-            alt='Products'
-            className='carousel-image'
-          />
-        </div>
-      </Carousel>
+      <div>
+        <Carousel
+          showArrows={false}
+          showThumbs={false}
+          showStatus={false}
+          emulateTouch={false}
+          showIndicators={true}
+        >
+          <div className='mb-5 mt-3'>
+            <img
+              style={{ height: "300px" }}
+              src='../assets/products_1.png'
+              alt='Products'
+              className='carousel-image'
+            />
+          </div>
+          <div className='mt-3'>
+            <img
+              style={{ height: "300px" }}
+              src='../assets/products_1.png'
+              alt='Products'
+              className='carousel-image'
+            />
+          </div>
+
+          <div className='mt-3'>
+            <img
+              style={{ height: "300px" }}
+              src='../assets/products_1.png'
+              alt='Products'
+              className='carousel-image'
+            />
+          </div>
+        </Carousel>
+      </div>
     </div>
   );
 };

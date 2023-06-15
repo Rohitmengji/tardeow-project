@@ -28,11 +28,10 @@ const CircleCard = () => {
       imageSrc: "../assets/Group 597.png",
       hoverImageSrc: "../assets/Group 598.png",
     },
-    
   ];
 
   return (
-    <div className='our-focus-container p-3 mb-5'>
+    <div className='our-focus-container p-4 mb-5'>
       <h2 className='mb-4 mt-4 text-center brown'>Our Focus</h2>
 
       <div className='row justify-content-around'>
@@ -59,43 +58,11 @@ const CircleCard = () => {
                   className='circle-logo'
                 />
               </div>
-              <h6 className='circle-name'>{circleCard.name}</h6>
+              <h6 className='circle-name fw-bold'>{circleCard.name}</h6>
             </div>
           </div>
         ))}
       </div>
-
-      {/* {hoveredCard !== null && (
-        <div className='row justify-content-around mt-4'>
-          {circleCards.slice(3, 6).map((circleCard, index) => (
-            <div
-              key={index}
-              className='col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center'
-              onMouseEnter={() => handleCardMouseEnter(index + 3)}
-              onMouseLeave={handleCardMouseLeave}
-            >
-              <div
-                className={`circle-card${
-                  hoveredCard === index + 3 ? " hovered" : ""
-                }`}
-              >
-                <div className='circle dotted-border'>
-                  <img
-                    src={
-                      hoveredCard === index + 3
-                        ? circleCard.hoverImageSrc
-                        : circleCard.imageSrc
-                    }
-                    alt={circleCard.name}
-                    className='circle-logo'
-                  />
-                </div>
-                <h6 className='circle-name'>{circleCard.name}</h6>
-              </div>
-            </div>
-          ))}
-        </div>
-      )} */}
     </div>
   );
 };

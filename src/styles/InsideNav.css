@@ -1,29 +1,83 @@
-
 .TarOdew {
     background-color: #fceeed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    /* Add this line to hide horizontal overflow */
 }
 
-.bold{
+.bold {
     font-size: 27px;
     font-weight: 800;
 }
 
-.brown {
-    color: #5f262c;
-}
-
 .green {
     color: #637e52;
+    display: block;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.brown {
+    color: #5f262c;
+    display: block;
+    width: 100%;
+}
+.navbar-nav {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .header {
     text-align: center;
-    /* margin-bottom: rem; */
+}
+
+.aligning {
+    margin-top: 5.1rem !important;
+    padding: 10px;
+}
+
+.icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+  margin: 0 auto; /* Add this line to center the ul element */
+  text-align: center; /* Add this line to center the nav items */
 }
 
 
-.aligning {
-            margin-top: 5.5rem !important;
-            text-indent: 2px;
-        }
+@media only screen and (max-width: 600px) {
+    .container-fluid {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 
+    .navbar-brand img {
+        max-width: 100px;
+    }
+
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .col-md-5 {
+        text-align: center;
+    }
+
+  
+}

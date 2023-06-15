@@ -115,8 +115,8 @@ const Footer = () => {
                         Best Deals
                       </NavLink>
                     </td>
-                    <td style={{ paddingLeft: "38px" }} className='text-end'>
-                      <NavLink to='/' className='nav-link  greencol'>
+                    <td style={{ paddingLeft: "5rem" }}>
+                      <NavLink to='/' className='text-center nav-link greencol'>
                         My Account
                       </NavLink>
                     </td>
@@ -129,23 +129,26 @@ const Footer = () => {
                         Oils
                       </NavLink>
                     </td>
-                    <td className='text-end'>
-                      <NavLink to='/' className='nav-link mt-1 greencol'>
+                    <td>
+                      <NavLink
+                        to='/'
+                        className='text-end nav-link p-1 greencol'
+                      >
                         ABOUT
                       </NavLink>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <NavLink
-                        to='/'
-                        className='nav-link p-0 greencol'
-                      >
+                      <NavLink to='/' className='nav-link p-0 greencol'>
                         Honey
                       </NavLink>
                     </td>
-                    <td className='text-end'>
-                      <NavLink to='/' className='nav-link p-0 greencol'>
+                    <td>
+                      <NavLink
+                        to='/'
+                        className='text-end nav-link p-1 greencol'
+                      >
                         BLOG
                       </NavLink>
                     </td>
@@ -156,8 +159,11 @@ const Footer = () => {
                         Ghee
                       </NavLink>
                     </td>
-                    <td className='text-end'>
-                      <NavLink to='/' className='nav-link p-0 greencol'>
+                    <td>
+                      <NavLink
+                        to='/'
+                        className='text-end nav-link p-1 greencol'
+                      >
                         CONTACT
                       </NavLink>
                     </td>
@@ -167,10 +173,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="row"></div>
+          <div className='row'></div>
 
           <div className='col'>
-            <h2 className='brown fw-bold mt-2'>Contact Us</h2>
+            <h2 className='brown fw-bold '>Contact Us</h2>
             <hr className='footer-hr' />
             <ul className='nav flex-column col-lg-12'>
               <li className='nav-item mb-2 d-flex align-items-center justify-content-space'>

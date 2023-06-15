@@ -1,6 +1,6 @@
 .swiper {
     width: 100%;
-    /* overflow-x:hidden; */
+    overflow-x:hidden;      
     /* height: 60%; */
 }
 
@@ -21,16 +21,19 @@
     height: 100%;
 }
 
+
 .content .content-overlay {
-    background: rgba(20, 155, 40, 0.7);
+    background: #68e12f;
     position: absolute;
     height: 100%;
+    max-width: 100%;
     width: 100%;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
     opacity: 0;
+    border-radius: 1%;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
@@ -44,8 +47,9 @@
 .middle {
     position: absolute;
     display: flex;
+    flex-direction: row;
     top: 49%;
-    left: 48%;
+    left: 46%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -54,15 +58,22 @@
 .icon {
     color: white;
     font-size: 25px;
+    border-radius: 50%;
     margin: 0 5px;
+    background-color: #fff;
+    padding: 10px;
 }
 
-.icon:hover {
-    color: #dc970c;
+
+
+
+@media (min-width: 992px) {.container
+.container-lg
+.container-md
+.container-sm {
+    max-width: 800px;
 }
-
-
-
+}
 
 
 

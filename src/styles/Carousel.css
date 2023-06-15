@@ -2,7 +2,12 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-    /* object-position: 5px 17px; */
+}
+.carousel-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 

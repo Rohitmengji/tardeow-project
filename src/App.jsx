@@ -7,11 +7,10 @@ import BulkOrderSection from "./component/BulkOrderSection";
 import CustomerFeedback from "./component/CustomerFeedback";
 import ImageDisplay from "./component/ImageDisplay";
 import Footer from "./component/Footer";
-import "./App.css";
 
 const App = () => {
   return (
-    <div className='app-container'>
+    <div>
       {/* Render the Navbar component */}
       <Navbar />
 
