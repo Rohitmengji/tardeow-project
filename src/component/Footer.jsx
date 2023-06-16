@@ -48,14 +48,15 @@ const Footer = () => {
   return (
     <>
       <div className='container-fluid bgcolor text-justify p-4'>
-        <footer className='row row-cols-1  row-cols-sm-2 row-cols-md-5 '>
-          <div className='container mb-2'>
+        <footer className='row'>
+          <div className='container mb-2 col-sm'>
             <NavLink to='/' className='mb-3 link-dark text-decoration-none'>
               <img src='../assets/logo.png' alt='logo' />
             </NavLink>
-            <p className='brown fw-medium w-100'>
+            <p className='brown fw-medium w-100 mt-3'>
               make sure to include the necessary for the icons dependencies in
-              your project for the icons and styling to work correctly.
+              your project for the icons and styling to work correctly  for the icons and styling to work
+              correctly.
             </p>
 
             <div className='social-media'>
@@ -101,12 +102,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='row'></div>
-
-          <div className='row'>
+          <div className='col-sm'>
             <div className='col'>
               <h3 className=' brown fw-bold mb-3 mt-2'>Useful Links</h3>
-              <hr className='footer-hr' />
+              <hr className='footer-line' />
               <table cellPadding={2}>
                 <thead>
                   <tr>
@@ -115,8 +114,8 @@ const Footer = () => {
                         Best Deals
                       </NavLink>
                     </td>
-                    <td style={{ paddingLeft: "5rem" }}>
-                      <NavLink to='/' className='text-center nav-link greencol'>
+                    <td className='col-5 text-center'>
+                      <NavLink to='/' className='nav-link greencol'>
                         My Account
                       </NavLink>
                     </td>
@@ -130,10 +129,7 @@ const Footer = () => {
                       </NavLink>
                     </td>
                     <td>
-                      <NavLink
-                        to='/'
-                        className='text-end nav-link p-1 greencol'
-                      >
+                      <NavLink to='/' className=' nav-link p-1 greencol'>
                         ABOUT
                       </NavLink>
                     </td>
@@ -145,10 +141,7 @@ const Footer = () => {
                       </NavLink>
                     </td>
                     <td>
-                      <NavLink
-                        to='/'
-                        className='text-end nav-link p-1 greencol'
-                      >
+                      <NavLink to='/' className=' nav-link p-1 greencol'>
                         BLOG
                       </NavLink>
                     </td>
@@ -160,10 +153,7 @@ const Footer = () => {
                       </NavLink>
                     </td>
                     <td>
-                      <NavLink
-                        to='/'
-                        className='text-end nav-link p-1 greencol'
-                      >
+                      <NavLink to='/' className=' nav-link p-1 greencol'>
                         CONTACT
                       </NavLink>
                     </td>
@@ -173,11 +163,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='row'></div>
-
-          <div className='col'>
-            <h2 className='brown fw-bold '>Contact Us</h2>
-            <hr className='footer-hr' />
+          <div className='col-sm'>
+            <h3 className='brown fw-bold mb-2 mt-2'>Contact Us</h3>
+            <hr  className='footer-line' />
             <ul className='nav flex-column col-lg-12'>
               <li className='nav-item mb-2 d-flex align-items-center justify-content-space'>
                 <Link to='https://maps.google.com' className='nav-link p-0'>

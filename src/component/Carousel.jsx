@@ -13,7 +13,7 @@ const CarouselComponent = () => {
           emulateTouch={false}
           showIndicators={true}
         >
-          <div className='mb-5 mt-3'>
+          <div className='mb-5 mt-3 '>
             <img
               style={{ height: "300px" }}
               src='../assets/products_1.png'

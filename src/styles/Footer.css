@@ -10,9 +10,11 @@
     color: #456c33;
 }
 
-.footer-hr {
-    border: 2px solid green;
-    margin-top: 3px;
-    width: 66px;
+.footer-line {
+  width: 51px;
+  height: 4px;
+  background-color: darkgreen;
+  border: none;
 }
+
 

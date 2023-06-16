@@ -37,8 +37,8 @@
 }
 
 .aligning {
-    margin-top: 5.1rem !important;
-    padding: 10px;
+    margin-top: 5.0rem !important;
+    /* padding-right : 0.5rem */
 }
 
 .icons {
@@ -53,31 +53,10 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-    .container-fluid {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
 
-    .navbar-brand img {
-        max-width: 100px;
-    }
 
-    .navbar-toggler {
-        margin-top: 10px;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-    }
-
-    .icons {
-        margin-top: 10px;
-    }
-
-    .col-md-5 {
-        text-align: center;
-    }
-
-  
+@media (min-width: 768px){
+.col-md-7 {
+    max-width: 54.333333%;
+}
 }
