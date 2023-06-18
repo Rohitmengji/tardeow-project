@@ -1,4 +1,3 @@
-
 const BulkOrderSection = () => {
   return (
     <div className='container-fluid mb-5'>
@@ -8,7 +7,7 @@ const BulkOrderSection = () => {
             <img
               height={"370px"}
               style={{ objectFit: "cover" }}
-              src='../../public/assets/Group 601.png'
+              src='../assets/Group 601.jpg'
               alt='Background'
               className='w-100'
             />

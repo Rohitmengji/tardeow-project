@@ -34,7 +34,7 @@ const CircleCard = () => {
     <div className='our-focus-container p-4 mb-5'>
       <h2 className='mb-4 mt-4 text-center brown'>Our Focus</h2>
 
-      <div className='row justify-content-around'>
+      <div className='row '>
         {circleCards.slice(0, 3).map((circleCard, index) => (
           <div
             key={index}

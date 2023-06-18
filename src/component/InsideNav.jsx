@@ -104,7 +104,7 @@ function InsideNav() {
 
       <div className='container'>
         <div className='row'>
-          <div className='col-md-5  '>
+          <div className='col-md-5   '>
             <h4 className='aligning'>
               <span className='green d-block'>ENJOY THE BENEFITS OF</span>
               <strong className='brown bold'>COLD PRESSED OILS</strong>
@@ -113,10 +113,8 @@ function InsideNav() {
               Shop Now
             </NavLink>
           </div>
-          <div className='col-md-7 col-lg-8 col-sm-12 '>
-            <div className='p-'>
-              <CarouselComponent />
-            </div>
+          <div className=' col-sm-12 col-lg-8   '>
+            <CarouselComponent />
           </div>
         </div>
       </div>

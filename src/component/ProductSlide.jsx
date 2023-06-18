@@ -10,7 +10,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "../styles/styles.css";
 
 // import required modules
-import { Autoplay, Keyboard, Navigation, Mousewheel } from "swiper";
+import { Autoplay, Keyboard, Navigation } from "swiper";
 import { useState } from "react";
 
 function ProductSlide() {
@@ -89,7 +89,7 @@ function ProductSlide() {
           enabled: true,
         }}
         autoplay={{
-          delay: 5000,
+          delay: 7000,
         }}
         breakpoints={{
           720: {
@@ -105,7 +105,7 @@ function ProductSlide() {
             slidesPerView: 3,
           },
         }}
-        modules={[Keyboard, Navigation, Autoplay, Mousewheel]}
+        modules={[Keyboard, Navigation, Autoplay]}
         className='mySwiper'
       >
         {products.map((product, index) => (
@@ -135,7 +135,9 @@ function ProductSlide() {
                     />
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text>{renderStars(product.rating)}</Card.Text>
-                    <Card.Text style={{marginBottom : '9px'}}>Price: {product.price}</Card.Text>
+                    <Card.Text style={{ marginBottom: "9px" }}>
+                      Price: {product.price}
+                    </Card.Text>
                   </div>
 
                   {hoverIndex === index && (
