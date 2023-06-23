@@ -2,7 +2,19 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+    /* padding-right: 20rem; */
 }
+
+
+
+@media (min-width : 1440px) {
+.carousel-dots{
+    padding-right: 20rem;
+}
+
+}
+
+
 /* .carousel-wrapper {
     margin-top: 2rem;
     display: flex;

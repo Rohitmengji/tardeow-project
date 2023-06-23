@@ -113,7 +113,7 @@ function InsideNav() {
               Shop Now
             </NavLink>
           </div>
-          <div className=' col-sm-12 col-lg-8   '>
+          <div className='col-sm-12 col-lg-8   '>
             <CarouselComponent />
           </div>
         </div>
