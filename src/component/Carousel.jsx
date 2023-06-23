@@ -2,9 +2,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../styles/Carousel.css";
 
-const CarouselComponent = () => {
+const   CarouselComponent = () => {
   return (
-    <div className='pr-6'>
+    <div className='pr-2'>
       <div>
         <Carousel
           showArrows={false}

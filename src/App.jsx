@@ -1,36 +1,45 @@
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
-import InsideNav from "./component/InsideNav";
-import PrimeCategories from "./component/Categories";
-import CircleCard from "./component/CircleCard";
-import ProductSlide from "./component/ProductSlide";
-import BulkOrderSection from "./component/BulkOrderSection";
-import CustomerFeedback from "./component/CustomerFeedback";
-import ImageDisplay from "./component/ImageDisplay";
-import Footer from "./component/Footer";
+import About from "./component/About";
+import Home from "./component/Home";
+import Blog from "./component/Blog";
+import Contact from "./component/Contact";
+import Oils from "./component/Oils";
+import Honey from "./component/Honey";
+import Ghee from "./component/Ghee";
+import { ProductContext } from "./Store/ProductContext";
+import OilsCard from "./component/OilsCard";
+import ProductDetails from "./component/ProductDetails";
+import MyCart from "./component/MyCart";
+import { CartProvider } from "./Store/CartContext";
 
 const App = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   return (
-    <div>
-      {/* Render the Navbar component */}
-      <Navbar />
+    <CartProvider>
+      <ProductContext.Provider value={{ selectedProduct, setSelectedProduct }}>
+        <div>
+          <Navbar />
 
-      {/* Render the InsideNav component */}
-      <InsideNav />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/contact' element={<Contact />} />
 
-      {/* Render the PrimeCategories component */}
-      <PrimeCategories />
+            <Route path='/oils' element={<Oils />} />
+            <Route path='/honey' element={<Honey />} />
+            <Route path='/ghee' element={<Ghee />} />
+            <Route path='/mycart' element={<MyCart />} />
 
-      {/* Render the CircleCard component */}
-      <CircleCard />
-
-      {/* Render the OurFlagshipProducts component */}
-      <ProductSlide />
-
-      <BulkOrderSection />
-      <CustomerFeedback />
-      <ImageDisplay />
-      <Footer />
-    </div>
+            <Route path='/oilsCard' element={<OilsCard />} />
+            <Route path='/productDetails' element={<ProductDetails />} />
+          </Routes>
+        </div>
+      </ProductContext.Provider>
+    </CartProvider>
   );
 };
 

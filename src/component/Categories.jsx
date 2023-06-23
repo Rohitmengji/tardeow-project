@@ -1,9 +1,9 @@
   const Categories = () => {
     return (
-      <div>
-        <h2 className='brown text-center mt-3 mb-4'>Our Prime Categories</h2>
-        <div className='card-container p-4 mb-2'>
-          <div className='d-flex'>
+      <div className="container-fluid p-4 py-5">
+        <h2 className='brown text-center mt-2 mb-4'>Our Prime Categories</h2>
+        <div className='card-container'>
+          <div className='d-flex flex-row'>
             <div className='container '>
               <img
                 loading='lazy'

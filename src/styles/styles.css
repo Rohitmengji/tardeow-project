@@ -64,6 +64,7 @@
 .content:hover .middle {
     opacity: 1;
     transition-delay: 0s;
+    cursor: pointer;
     /* Set the transition delay to 0s */
 }
 
@@ -80,6 +81,7 @@
 
 .icon {
   color: white;
+ 
   font-size: 25px;
   border-radius: 48%;
   margin: 0 5px;

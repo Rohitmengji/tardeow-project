@@ -47,7 +47,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className='container-fluid bgcolor text-justify p-4'>
+      <div className='container-fluid bgcolor text-justify p-3'>
         <footer className='row'>
           <div className='container mb-2 col-sm'>
             <NavLink to='/' className='mb-3 link-dark text-decoration-none'>
@@ -55,11 +55,11 @@ const Footer = () => {
             </NavLink>
             <p className='brown fw-medium w-100 mt-3'>
               make sure to include the necessary for the icons dependencies in
-              your project for the icons and styling to work correctly  for the icons and styling to work
+              your project for the icons and for the icons and styling to work
               correctly.
             </p>
 
-            <div className='social-media'>
+            <div className='social-media d-flex justify-content-space gap-2 pt-3  align-items-center'>
               <NavLink to='https://www.facebook.com' target='_blank'>
                 <img
                   src={
@@ -101,20 +101,20 @@ const Footer = () => {
               </NavLink>
             </div>
           </div>
-
-          <div className='col-sm'>
-            <div className='col'>
+          <div className='col-1'></div>
+          <div className='col-sm-4'>
+            <div>
               <h3 className=' brown fw-bold mb-3 mt-2'>Useful Links</h3>
               <hr className='footer-line' />
               <table cellPadding={2}>
                 <thead>
                   <tr>
-                    <td className='text-right'>
-                      <NavLink to='/' className='nav-link  greencol'>
+                    <td>
+                      <NavLink to='/' className='nav-link  green'>
                         Best Deals
                       </NavLink>
                     </td>
-                    <td className='col-5 text-center'>
+                    <td className='col-5'>
                       <NavLink to='/' className='nav-link greencol'>
                         My Account
                       </NavLink>
@@ -124,12 +124,12 @@ const Footer = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <NavLink to='/' className='nav-link p-0 greencol'>
+                      <NavLink to='/' className='nav-link  p-0 greencol'>
                         Oils
                       </NavLink>
                     </td>
                     <td>
-                      <NavLink to='/' className=' nav-link p-1 greencol'>
+                      <NavLink to='/about' className=' nav-link p-0 greencol'>
                         ABOUT
                       </NavLink>
                     </td>
@@ -141,7 +141,7 @@ const Footer = () => {
                       </NavLink>
                     </td>
                     <td>
-                      <NavLink to='/' className=' nav-link p-1 greencol'>
+                      <NavLink to='blog/' className=' nav-link p-0 greencol'>
                         BLOG
                       </NavLink>
                     </td>
@@ -153,7 +153,7 @@ const Footer = () => {
                       </NavLink>
                     </td>
                     <td>
-                      <NavLink to='/' className=' nav-link p-1 greencol'>
+                      <NavLink to='/contact' className=' nav-link p-0 greencol'>
                         CONTACT
                       </NavLink>
                     </td>
@@ -163,64 +163,152 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* <div className='col-sm'>
+            <h3 className='brown fw-bold mb-2 '>Contact Us</h3>
+            <hr className='footer-line' />
+            <div>
+              <ul className='nav flex-column'>
+                <li className='nav-item mb-2 d-flex align-items-center '>
+                  <Link to='https://maps.google.com' className='nav-link  p-0 '>
+                    <img
+                      src={
+                        hoverState.isLocationHovered
+                          ? "../assets/Group 603.png"
+                          : "../assets/Group 44.png"
+                      }
+                      alt='location'
+                      onMouseEnter={() =>
+                        handleHover("isLocationHovered", true)
+                      }
+                      onMouseLeave={() =>
+                        handleHover("isLocationHovered", false)
+                      }
+                    />
+                  </Link>
+                  <span className='ps-2 text-justify fw-medium   greencol fw-normal'>
+                    Lorem ipsum, dolor sit amet elit
+                  </span>
+                </li>
+                <li className='d-flex mb-2 align-items-left'>
+                  <Link to='mailto:tarodew@gmail.com' className='nav-link p-0'>
+                    <img
+                      src={
+                        hoverState.isEmailHovered
+                          ? "../assets/Group 604.png"
+                          : "../assets/Group 45.png"
+                      }
+                      alt='email'
+                      onMouseEnter={() => handleHover("isEmailHovered", true)}
+                      onMouseLeave={() => handleHover("isEmailHovered", false)}
+                    />
+                  </Link>
+                  <p className='ps-2 greencol fw-medium pt-1'>
+                    tarodew@gmail.com
+                  </p>
+                </li>
+                <li className='nav-item mb-2 d-flex align-items-center'>
+                  <Link to='tel:+911234567891' className='nav-link p-0'>
+                    <img
+                      src={
+                        hoverState.isPhoneNumberHovered
+                          ? "../assets/Group 605.png"
+                          : "../assets/Group 46.png"
+                      }
+                      alt='phoneNumber'
+                      onMouseEnter={() =>
+                        handleHover("isPhoneNumberHovered", true)
+                      }
+                      onMouseLeave={() =>
+                        handleHover("isPhoneNumberHovered", false)
+                      }
+                    />
+                  </Link>
+                  <p className='ps-2 pt-1 greencol fw-medium'>+91 1234567891</p>
+                </li>
+              </ul>
+            </div>
+          </div> */}
+
           <div className='col-sm'>
-            <h3 className='brown fw-bold mb-2 mt-2'>Contact Us</h3>
-            <hr  className='footer-line' />
-            <ul className='nav flex-column col-lg-12'>
-              <li className='nav-item mb-2 d-flex align-items-center justify-content-space'>
-                <Link to='https://maps.google.com' className='nav-link p-0'>
-                  <img
-                    src={
-                      hoverState.isLocationHovered
-                        ? "../assets/Group 603.png"
-                        : "../assets/Group 44.png"
-                    }
-                    alt='location'
-                    onMouseEnter={() => handleHover("isLocationHovered", true)}
-                    onMouseLeave={() => handleHover("isLocationHovered", false)}
-                  />
-                </Link>
-                <span className='ps-2 pt-1 greencol fw-medium'>
-                  Lorem ipsum, dolor sit amet consectetur elit
-                </span>
-              </li>
-              <li className='d-flex mb-2 align-items-left'>
-                <Link to='mailto:tarodew@gmail.com' className='nav-link p-0'>
-                  <img
-                    src={
-                      hoverState.isEmailHovered
-                        ? "../assets/Group 604.png"
-                        : "../assets/Group 45.png"
-                    }
-                    alt='email'
-                    onMouseEnter={() => handleHover("isEmailHovered", true)}
-                    onMouseLeave={() => handleHover("isEmailHovered", false)}
-                  />
-                </Link>
-                <p className='ps-2 greencol fw-medium pt-1'>
-                  tarodew@gmail.com
-                </p>
-              </li>
-              <li className='nav-item mb-2 d-flex align-items-center'>
-                <Link to='tel:+911234567891' className='nav-link p-0'>
-                  <img
-                    src={
-                      hoverState.isPhoneNumberHovered
-                        ? "../assets/Group 605.png"
-                        : "../assets/Group 46.png"
-                    }
-                    alt='phoneNumber'
-                    onMouseEnter={() =>
-                      handleHover("isPhoneNumberHovered", true)
-                    }
-                    onMouseLeave={() =>
-                      handleHover("isPhoneNumberHovered", false)
-                    }
-                  />
-                </Link>
-                <p className='ps-2 pt-1 greencol fw-medium'>+91 1234567891</p>
-              </li>
-            </ul>
+            <h3 className='brown fw-bold mb-2'>Contact Us</h3>
+            <hr className='footer-line' />
+            <div>
+              <ul className='nav flex-column'>
+                <li className='nav-item mb-2'>
+                  <div className='d-flex align-items-center'>
+                    <Link to='https://maps.google.com' className='nav-link p-0'>
+                      <img
+                        className='contact-icon img-fluid'
+                        src={
+                          hoverState.isLocationHovered
+                            ? "../assets/Group 603.png"
+                            : "../assets/Group 44.png"
+                        }
+                        alt='location'
+                        onMouseEnter={() =>
+                          handleHover("isLocationHovered", true)
+                        }
+                        onMouseLeave={() =>
+                          handleHover("isLocationHovered", false)
+                        }
+                      />
+                    </Link>
+                    <span className='ps-2 fw-medium greencol fw-normal'>
+                      Lorem ipsum, dolor sit amet elit
+                    </span>
+                  </div>
+                </li>
+                <li className='nav-item mb-2'>
+                  <div className='d-flex align-items-center'>
+                    <Link
+                      to='mailto:tarodew@gmail.com'
+                      className='nav-link p-0'
+                    >
+                      <img
+                        className='contact-icon img-fluid'
+                        src={
+                          hoverState.isEmailHovered
+                            ? "../assets/Group 604.png"
+                            : "../assets/Group 45.png"
+                        }
+                        alt='email'
+                        onMouseEnter={() => handleHover("isEmailHovered", true)}
+                        onMouseLeave={() =>
+                          handleHover("isEmailHovered", false)
+                        }
+                      />
+                    </Link>
+                    <p className='ps-2 greencol fw-medium pt-1'>
+                      tarodew@gmail.com
+                    </p>
+                  </div>
+                </li>
+                <li className='nav-item mb-2'>
+                  <div className='d-flex align-items-center'>
+                    <Link to='tel:+911234567891' className='nav-link p-0'>
+                      <img
+                        className='contact-icon img-fluid'
+                        src={
+                          hoverState.isPhoneNumberHovered
+                            ? "../assets/Group 605.png"
+                            : "../assets/Group 46.png"
+                        }
+                        alt='phoneNumber'
+                        onMouseEnter={() =>
+                          handleHover("isPhoneNumberHovered", true)
+                        }
+                        onMouseLeave={() =>
+                          handleHover("isPhoneNumberHovered", false)
+                        }
+                      />
+                    </Link>
+                    <p className='ps-2 justify-content-center greencol fw-medium'>
+                      +91 1234567891
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </footer>
       </div>

@@ -7,6 +7,8 @@
     /* Add this line to hide horizontal overflow */
 }
 
+
+
 .bold {
     font-size: 27px;
     font-weight: 800;
@@ -14,7 +16,7 @@
 
 .green {
     color: #637e52;
-    display: block;
+
     
     white-space: wrap;
     width: 100%;
@@ -22,14 +24,10 @@
 
 .brown {
     color: #5f262c;
-    display: block;
+   
     width: 100%;
 }
-.navbar-nav {
-    flex-wrap: wrap;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 
 
@@ -98,3 +96,13 @@
             max-width: 68%;
         
 }
+
+.fixed-image{
+    background-image: url('/assets/aboutfixedpage.jpg');
+    background-position :center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 42%;
+    height: 49vh !important;
+}
+
