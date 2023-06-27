@@ -27,6 +27,8 @@ body {
     flex-direction: column;
 }
 
+
+
 /* Set flex-grow: 1 for the main content container to make it fill the remaining vertical space */
 #root {
     flex-grow: 1;

@@ -29,40 +29,53 @@ const OilsCard = () => {
 
   const products = [
     {
+      id: 1,
       name: "Coconut Oil",
       rating: 4.5,
       price: "₹300",
+      MRP: "₹600",
       image: "../assets/coconut-oil.webp",
       productDetails: "/productDetails",
     },
     {
+      id: 2,
       name: "Groundnut Oil",
       rating: 4.5,
       price: "₹600",
+      MRP: "₹850",
       image: "../assets/groundnutoil.jpg",
     },
     {
+      id: 3,
       name: "Mustard Oil",
       rating: 4,
-      price: "₹600",
+      price: "₹500",
+      MRP: "₹560",
+
       image: "../assets/mustard-oil.webp",
     },
     {
+      id: 4,
       name: "Groundnut Oil",
       rating: 4.5,
       price: "₹600",
+      MRP: "₹790",
       image: "../assets/groundnutoil.jpg",
     },
     {
+      id: 5,
       name: "Mustard Oil",
       rating: 4,
       price: "₹600",
+      MRP: "₹900",
       image: "../assets/mustard-oil.webp",
     },
     {
+      id: 6,
       name: "Mustard Oil",
       rating: 4,
-      price: "₹290",
+      price: "₹310",
+      MRP : '₹490',
       image: "../assets/mustard-oil.webp",
     },
     // Add more oil products here
@@ -84,7 +97,7 @@ const OilsCard = () => {
   };
 
   return (
-    <div className='container mb-5'>
+    <div className='container mb-5 '>
       <div className='d-flex flex-wrap justify-content-around'>
         {products.map((product, index) => (
           <div
@@ -94,17 +107,17 @@ const OilsCard = () => {
             onMouseLeave={handleMouseLeave}
           >
             <Card
-              className='mx-3 content'
+              className='mx-3 content mt-4 '
               border='0'
               style={{ boxShadow: "revert-layer" }}
             >
-              <Card.Body className='d-flex flex-column justify-content-between flex items-center justify-center relative'>
+              <Card.Body className='d-flex flex-column justify-content-between flex align-items-center  relative'>
                 <div className='content-overlay'></div>
                 <div className='text-center'>
                   <Card.Img
                     style={{
                       width: "100%",
-                      height: "280px",
+                      height: "250px",
                       objectFit: "contain",
                     }}
                     variant='top'
@@ -113,7 +126,7 @@ const OilsCard = () => {
                   />
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>{renderStars(product.rating)}</Card.Text>
-                  <Card.Text style={{ marginBottom: "9px", fontSize: "19px" }}>
+                  <Card.Text style={{ marginBottom: "9px", fontSize: "18px" }}>
                     Price: {product.price}
                   </Card.Text>
                 </div>

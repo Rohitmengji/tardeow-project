@@ -5,26 +5,24 @@ const BulkOrderSection = () => {
         <div className='row'>
           <div className='col-12 p-0 position-relative'>
             <img
-              height={"370px"}
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", width: "100%", height: "60vh" }}
               src='../assets/Group 601.jpg'
               alt='Background'
               className='w-100'
             />
             <div className='position-absolute top-50 start-50 translate-middle-y'>
-              <h2
+              <h3
                 style={{
                   color: "#714547",
                   position: "relative",
+                  display: "block",
                   zIndex: 1,
-                  textAlign: "center",
-                  paddingLeft: "1.5rem",
-                  paddingRight: "1.5rem", // Added paddingRight for responsive alignment
+                  paddingRight: "1.2rem", // Added paddingRight for responsive alignment
                 }}
                 className='text-center text-lg-left'
               >
                 Looking for Bulk Orders?
-              </h2>
+              </h3>
               <button
                 className='btn btn-success btn-sm mt-3'
                 style={{

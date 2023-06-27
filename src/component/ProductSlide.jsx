@@ -28,7 +28,7 @@ function ProductSlide() {
   };
   const products = [
     {
-      name: "A2 Desi Cow Ghee",
+      name: "Desi Cow Ghee",
       rating: 5,
       price: "₹650",
       image: "../assets/Ghee_1Ltr_bottlee.jpg",
@@ -88,12 +88,16 @@ function ProductSlide() {
         keyboard={{
           enabled: true,
         }}
-        autoplay={{
-          delay: 7000,
-        }}
+       
         breakpoints={{
           720: {
             slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+          424: {
+            slidesPerView: 2  ,
           },
           767: {
             slidesPerView: 2,
@@ -122,12 +126,12 @@ function ProductSlide() {
               >
                 <Card.Body className='d-flex flex-column justify-content-between flex items-center justify-center relative'>
                   <div className='content-overlay'></div>
-                  <div className='text-center'>
+                 
                     <Card.Img
                       style={{
                         width: "100%",
                         height: "230px",
-                        objectFit: "contain",
+                        objectFit: "cover",
                       }}
                       variant='top'
                       src={product.image}
@@ -136,12 +140,12 @@ function ProductSlide() {
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text>{renderStars(product.rating)}</Card.Text>
                     <Card.Text style={{marginBottom : '9px'}}>Price: {product.price}</Card.Text>
-                  </div>
+                
 
                   {hoverIndex === index && (
                     <div className='middle flex align-items-center justify-content-center gap-2'>
                       {/* create circular icons */}
-                      <span className="bg-white d-flex items-center justify-center px-2 py-2 text-black" style={{
+                      <span className="bg-white d-flex align-items-center justify-center px-2 py-2 text-black" style={{
                         borderRadius: '50px',
                       }}>
                         <FontAwesomeIcon style={{ color: "black ", fill:"none" }} icon={faSearch} />

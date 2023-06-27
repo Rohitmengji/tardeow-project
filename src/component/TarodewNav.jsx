@@ -2,9 +2,10 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/InsideNav.css";
 import AboutBreadcrumb from "./AboutBreadcrumb";
-import OilsBreadcrumb from './OilsBreadCrumb'
+import OilsBreadcrumb from "./OilsBreadCrumb";
 import HoneyBreadCrumb from "./HoneyBreadCrumb";
 import ProductDetailsBreadCrumb from "./ProductDetailsBreadCrumb";
+import { Container } from "react-bootstrap";
 
 function TarOdewNav() {
   const logo = "../assets/logo.png";
@@ -26,17 +27,17 @@ function TarOdewNav() {
     }
   };
   const isAboutPage = window.location.pathname === "/about"; // Check if the current page is the "About" page
-  
-  const isOilspage = window.location.pathname === "/oils"; 
 
-  const isHoneypage = window.location.pathname === "/honey"; 
+  const isOilspage = window.location.pathname === "/oils";
 
-  const isProductPage = window.location.pathname === "/productDetails"; 
+  const isHoneypage = window.location.pathname === "/honey";
+
+  const isProductPage = window.location.pathname === "/productDetails";
 
   return (
-    <div className='TarOdew fixed-image overflow-hidden'>
+    <div className='TarOdew p-3 overflow-hidden'>
       <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color'>
-        <div className='container-fluid'>
+        <Container fluid>
           <NavLink className='navbar-brand' to='/'>
             <img src={logo} alt='Tarodew' />
           </NavLink>
@@ -46,23 +47,23 @@ function TarOdewNav() {
             type='button'
             onClick={handleToggle}
           >
-            <span className='navbar-toggler-icon  '></span>
+            <span className='navbar-toggler-icon'></span>
           </button>
 
           <div
             className={`collapse navbar-collapse ${
               isCollapsed ? "" : "show"
-            } justify-content-center`}
+            } justify-content-center mx-auto`}
             id='navbarNav'
           >
-            <ul className='navbar-nav d-flex flex-row fw-medium gap-2'>
+            <ul className='navbar-nav justify-content-center col-lg-8'>
               <li className='nav-item'>
                 <NavLink className='nav-link brown fw-medium' to='/best-deals'>
                   BEST DEALS
                 </NavLink>
               </li>
               <li className='nav-item'>
-                <NavLink className='nav-link ' to='/oils'>
+                <NavLink className='nav-link brown' to='/oils'>
                   OILS
                 </NavLink>
               </li>
@@ -84,23 +85,23 @@ function TarOdewNav() {
             </ul>
 
             <div
-              className={`d-flex justify-content-center nav-icons icons   ${
+              className={`d-flex nav-icons justify-content-center icons ${
                 isCollapsed ? "" : "show"
               }`}
             >
-              <div className='search-bar  mx-2'>
+              <div className='search-bar mx-2 mb-1'>
                 {/* Search bar component */}
                 <NavLink to='/search'>
                   <img width={"19px"} src={searchIcon} alt='search' />
                 </NavLink>
               </div>
-              <div className='profile-logo mx-2'>
+              <div className='profile-logo mx-2 mb-1'>
                 {/* Profile logo component */}
                 <NavLink>
                   <img width={"19px"} src={userIcon} alt='user' />
                 </NavLink>
               </div>
-              <div className='cart-logo mx-2'>
+              <div className='cart-logo mx-2 mb-1'>
                 {/* Cart logo component */}
                 <NavLink to='/mycart'>
                   <img width={"19px"} src={cartIcon} alt='cart' />
@@ -108,12 +109,14 @@ function TarOdewNav() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </nav>
-      {isAboutPage && <AboutBreadcrumb />}
-      {isOilspage && <OilsBreadcrumb />}
-      {isHoneypage && <HoneyBreadCrumb />}
-      {isProductPage && <ProductDetailsBreadCrumb />}
+      <div>
+        {isAboutPage && <AboutBreadcrumb />}
+        {isOilspage && <OilsBreadcrumb />}
+        {isHoneypage && <HoneyBreadCrumb />}
+        {isProductPage && <ProductDetailsBreadCrumb />}
+      </div>
     </div>
   );
 }

@@ -23,8 +23,7 @@
 }
 
 .brown {
-    color: #5f262c;
-   
+    color: #5e272c;
     width: 100%;
 }
 
@@ -58,6 +57,12 @@
 }
 }
 
+@media (min-width: 1024px) {
+    .col-lg-7 {
+    flex: 0 0 auto;
+    width: 49.333333% !important;
+}
+}
 
 
 @media (min-width: 992px) {

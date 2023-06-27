@@ -12,6 +12,14 @@ const CircleCard = () => {
     setHoveredCard(null);
   };
 
+  const handleCardClick = (index) => {
+    if (hoveredCard === index) {
+      setHoveredCard(null);
+    } else {
+      setHoveredCard(index);
+    }
+  };
+
   const circleCards = [
     {
       name: "Traditional",
@@ -31,16 +39,17 @@ const CircleCard = () => {
   ];
 
   return (
-    <div className='our-focus-container p-5 mb-2'>
-      <h2 className='mb-4 text-center brown'>Our Focus</h2>
+    <div className='our-focus-container'>
+      <h2 className='mt-4 mb-3 text-center brown'>Our Focus</h2>
 
-      <div className='row '>
+      <div className='row'>
         {circleCards.slice(0, 3).map((circleCard, index) => (
           <div
             key={index}
             className='col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center'
             onMouseEnter={() => handleCardMouseEnter(index)}
             onMouseLeave={handleCardMouseLeave}
+            onClick={() => handleCardClick(index)}
           >
             <div
               className={`circle-card${

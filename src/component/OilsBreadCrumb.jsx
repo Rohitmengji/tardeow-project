@@ -21,7 +21,7 @@ function OilsBreadCrumb() {
             </NavLink>
           </li>
           <li className='breadcrumb-item active' aria-current='page'>
-            <NavLink to={"/about"} className={"fw-medium nav-link "}>
+            <NavLink to={"/oils"} className={"fw-medium nav-link "}>
               Oils
             </NavLink>
           </li>

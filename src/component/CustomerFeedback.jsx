@@ -50,8 +50,6 @@ const CustomerFeedback = () => {
               pagination={{ clickable: true }}
               spaceBetween={50}
               slidesPerView={1}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: false,
@@ -90,7 +88,7 @@ const CustomerFeedback = () => {
                         style={{
                           fontWeight: "bold",
                           color: "#456c33",
-                          marginBottom:'32px'
+                          marginBottom: "32px",
                         }}
                       >
                         {feedback.author}

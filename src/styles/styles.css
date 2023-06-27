@@ -8,7 +8,6 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -22,7 +21,7 @@
 }
 
 .content .content-overlay {
-    background: #68e12f;
+   
     position: absolute;
     height: 100%;
     max-width: 100%;
@@ -33,6 +32,7 @@
     right: 0;
     opacity: 0;
     border-radius: 4%;
+    transition: opacity 0.2s ease-in-out;
     /* -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s; */
@@ -40,7 +40,6 @@
 
 .content:hover .content-overlay {
     opacity: 0.6;
-
   background: #68e12f;
   position: absolute;
   height: 100%;
@@ -51,7 +50,7 @@
   bottom: 0;
   right: 0;
   opacity: 0;
-  border-radius: 1%;
+  border-radius: 16%;
   /* -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s; */
   /* transition: all 0.5s ease-in-out 0s;y */
@@ -63,7 +62,7 @@
 
 .content:hover .middle {
     opacity: 1;
-    transition-delay: 0s;
+    transition-delay: 0.4s;
     cursor: pointer;
     /* Set the transition delay to 0s */
 }
@@ -88,9 +87,13 @@
   background-color: #fff;
   padding: 10px;
 }
-
+/* 
 @media (min-width: 992px) {
   .container .container-lg .container-md .container-sm {
     max-width: 800px;
   }
+} */
+
+@media (min-width : 320px){
+  
 }
