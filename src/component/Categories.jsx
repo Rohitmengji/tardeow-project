@@ -16,8 +16,8 @@ const Categories = () => {
               className='card-image'
             />
 
-            <div className='d-flex mt-3 justify-content-center'>
-              <h4>Oils</h4>
+            <div className='d-flex mt-2 justify-content-center'>
+              <h5>Oils</h5>
             </div>
           </div>
 
@@ -32,8 +32,8 @@ const Categories = () => {
               alt='Honey'
               className='card-image'
             />
-            <div className='d-flex mt-3 justify-content-center'>
-              <h4>Honey</h4>
+            <div className='d-flex mt-2 justify-content-center'>
+              <h5>Honey</h5>
             </div>
           </div>
 
@@ -48,8 +48,8 @@ const Categories = () => {
               alt='Ghee'
               className='card-image'
             />
-            <div className='d-flex mt-3  justify-content-center'>
-              <h4>Ghee</h4>
+            <div className='d-flex mt-2  justify-content-center'>
+              <h5>Ghee</h5>
             </div>
           </div>
         </div>

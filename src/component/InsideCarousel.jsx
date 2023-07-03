@@ -2,16 +2,20 @@ import { NavLink } from "react-router-dom";
 import CarouselComponent from "./Carousel";
 
 const InsideCarousel = () => {
+   const buttonStyle = {
+     backgroundColor: "#486a37",
+     // Add other desired styles
+   };
   return (
     <div>
       <div className='container-fluid TarOdew'>
         <div className='row'>
           <div className='col-md-4 '>
-            <h4 className='aligning'>
+            <h5 className='aligning'>
               <span className='green d-block'>ENJOY THE BENEFITS OF</span>
               <strong className='brown bold'>COLD PRESSED OILS</strong>
-            </h4>
-            <NavLink to='/shopnow' className='btn btn-success btn-sm mt-2'>
+            </h5>
+            <NavLink to='/shopnow' className='btn btn-success  btn-md mt-2' style={buttonStyle}>
               Shop Now
             </NavLink>
           </div>

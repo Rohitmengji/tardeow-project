@@ -2,12 +2,12 @@
     background-image: url("../assets/Group 591.jpg");
     background-size: cover;
     background-position: center;
-    /* height: min-content; */
+    
 }
 
 .customer-feedback-container {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 40px;
 }
 
 .container {

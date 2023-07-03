@@ -101,7 +101,7 @@ const Footer = () => {
               </NavLink>
             </div>
           </div>
-          <div className='col-sm-4'>
+          <div className='col-sm-3'>
             <div>
               <h3 className=' brown fw-bold mb-3 mt-2'>Useful Links</h3>
               <hr className='footer-line' />
@@ -162,7 +162,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='col-sm-4'>
+          <div className='col-sm-4 respon'>
             <h3 className='brown fw-bold mb-2 '>Contact Us</h3>
             <hr className='footer-line' />
             <div>

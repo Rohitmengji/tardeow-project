@@ -21,7 +21,6 @@
 }
 
 .content .content-overlay {
-   
     position: absolute;
     height: 100%;
     max-width: 100%;
@@ -32,14 +31,10 @@
     right: 0;
     opacity: 0;
     border-radius: 4%;
-    transition: opacity 0.2s ease-in-out;
-    /* -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s; */
 }
 
 .content:hover .content-overlay {
-    opacity: 0.6;
+    opacity: 0.5;
   background: #68e12f;
   position: absolute;
   height: 100%;
@@ -51,9 +46,6 @@
   right: 0;
   opacity: 0;
   border-radius: 16%;
-  /* -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s; */
-  /* transition: all 0.5s ease-in-out 0s;y */
 }
 
 .content:hover .content-overlay {

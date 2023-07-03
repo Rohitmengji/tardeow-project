@@ -20,9 +20,8 @@ const App = () => {
   return (
     <CartProvider>
       <ProductContext.Provider value={{ selectedProduct, setSelectedProduct }}>
-        <div>
+        <  >
           <Navbar />
-
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
@@ -37,7 +36,7 @@ const App = () => {
             <Route path='/oilsCard' element={<OilsCard />} />
             <Route path='/productDetails' element={<ProductDetails />} />
           </Routes>
-        </div>
+        </>
       </ProductContext.Provider>
     </CartProvider>
   );
