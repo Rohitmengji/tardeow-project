@@ -3,6 +3,7 @@
     max-width: 500px;
     /* Set your desired max-width */
     margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     
 }
 
@@ -19,9 +20,9 @@
 .tabs {
     flex: 1;
     display: flex;
-    border-left: 2px black;
     justify-content: center;
     align-items: center;
+    border-left: 2px solid rgba(0, 0, 0, 0.3) ;
     position: relative;
     cursor: pointer;
     }
@@ -52,7 +53,7 @@
 .content {
     display: none;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 10px;
+    padding: 8px;
 }
 
 .active-content {

@@ -15,7 +15,7 @@ const Tab = () => {
     <div className='tab-container'>
       <ul className='tab-list mb-3'>
         <li
-          className={`tabs ${getActiveClass(1, "active-tabs")}`}
+          className={`tabs  ${getActiveClass(1, "active-tabs")}`}
           onClick={() => toggleTab(1)}
         >
           DESCRIPTION

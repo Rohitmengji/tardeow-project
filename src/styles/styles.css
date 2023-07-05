@@ -59,7 +59,7 @@
     /* Set the transition delay to 0s */
 }
 
-.middle {
+/* .middle {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -68,11 +68,28 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+} */
+
+.middle {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 49%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%);
+  /* Safari */
+  -moz-transform: translate(-50%, -50%);
+  /* Firefox */
+  -o-transform: translate(-50%, -50%);
+  /* Opera */
+  text-align: center;
 }
 
 .icon {
   color: white;
- 
   font-size: 25px;
   border-radius: 48%;
   margin: 0 5px;
