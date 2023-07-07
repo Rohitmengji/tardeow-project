@@ -59,16 +59,6 @@
     /* Set the transition delay to 0s */
 }
 
-/* .middle {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  top: 49%;
-  left: 46%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-} */
 
 .middle {
   position: absolute;
@@ -95,14 +85,4 @@
   margin: 0 5px;
   background-color: #fff;
   padding: 10px;
-}
-/* 
-@media (min-width: 992px) {
-  .container .container-lg .container-md .container-sm {
-    max-width: 800px;
-  }
-} */
-
-@media (min-width : 320px){
-  
 }

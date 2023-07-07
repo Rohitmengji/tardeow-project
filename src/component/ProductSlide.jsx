@@ -12,10 +12,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Autoplay, Keyboard, Navigation } from "swiper";
 
-import searchIcon from "/assets/Icon ionic-ios-search-1.png";
-import heartIcon from "/assets/heartoverlay.png";
-import cartIcon from "/assets/overlaycart.png";
-
 function ProductSlide() {
   const [hoverIndex, setHoverIndex] = useState(null);
 
@@ -32,19 +28,19 @@ function ProductSlide() {
       name: "Desi Cow Ghee",
       rating: 5,
       price: "₹650",
-      image: "../assets/Ghee_1Ltr_bottlee.jpg",
+      image: "/assets/Ghee_1Ltr_bottlee.jpg",
     },
     {
       name: "Honey",
       rating: 4,
       price: "₹500",
-      image: "../assets/Honey_1kg_Bottlee.jpg",
+      image: "/assets/Honey_1kg_Bottlee.jpg",
     },
     {
       name: "Cocunut Oil",
       rating: 4.5,
       price: "₹290",
-      image: "../assets/coconut-oil.webp",
+      image: "/assets/coconut-oil.webp",
     },
     {
       name: "Groundnut Oil",
@@ -153,7 +149,7 @@ function ProductSlide() {
                         }}
                       >
                         <img
-                          src={searchIcon}
+                          src={"/assets/Icon ionic-ios-search-1.png"}
                           alt='Search Icon'
                           style={{ width: "16px", height: "16px" }}
                         />
@@ -167,7 +163,7 @@ function ProductSlide() {
                         }}
                       >
                         <img
-                          src={heartIcon}
+                          src='/assets/heartoverlay.png'
                           alt='Heart Icon'
                           style={{ width: "16px", height: "16px" }}
                         />
@@ -183,7 +179,7 @@ function ProductSlide() {
                           }}
                         >
                           <img
-                            src={cartIcon}
+                            src='/assets/overlaycart.png'
                             alt='Cart Icon'
                             style={{ width: "16px", height: "17px" }}
                           />
