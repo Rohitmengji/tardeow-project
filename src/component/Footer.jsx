@@ -105,7 +105,7 @@ const Footer = () => {
             <div>
               <h3 className=' brown fw-bold mb-3 mt-2'>Useful Links</h3>
               <hr className='footer-line' />
-              <table className="greencol fw-medium" cellPadding={2}>
+              <table className='greencol fw-medium' cellPadding={2}>
                 <thead>
                   <tr>
                     <td>
@@ -140,7 +140,7 @@ const Footer = () => {
                       </NavLink>
                     </td>
                     <td>
-                      <NavLink to='blog/' className=' nav-link p-0 greencol'>
+                      <NavLink to='/blog' className=' nav-link p-0 greencol'>
                         BLOG
                       </NavLink>
                     </td>

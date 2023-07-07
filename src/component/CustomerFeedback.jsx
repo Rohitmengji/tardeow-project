@@ -55,48 +55,49 @@ const CustomerFeedback = () => {
                 disableOnInteraction: false,
               }}
             >
-              {feedbackData.map((feedback, index) => (
-                <SwiperSlide key={index}>
-                  <div className='feedbackmsg '>
-                    <div className='qoute-img'>
-                      <img
-                        className='d-block'
-                        src='../assets/Group 54.png'
-                        alt='Quote Icon'
-                        style={{
-                          objectFit: "contain",
-                          height: "80px",
-                          width: "58px",
-                        }}
-                      />
+              {feedbackData.map((feedback, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <div className='feedbackmsg '>
+                      <div className='qoute-img'>
+                        <img
+                          className='d-block'
+                          src='../assets/Group 54.png'
+                          alt='Quote Icon'
+                          style={{
+                            objectFit: "contain",
+                            height: "80px",
+                            width: "58px",
+                          }} />
+                      </div>
+                      <div className='feedback-msg'>
+                        <p
+                          className='text-wrap text-truncate'
+                          style={{
+                            fontSize: "20px",
+                            fontFamily: "sans-serif",
+                            wordSpacing: "2px",
+                          }}
+                        >
+                          {feedback.message}
+                        </p>
+                          <hr className='feedbackLine' />
+                      </div>
+                      <div className='feedback-author'>
+                        <p
+                          style={{
+                            fontWeight: "bold",
+                            color: "#456c33",
+                            marginBottom: "32px",
+                          }}
+                        >
+                          {feedback.author}
+                        </p>
+                      </div>
                     </div>
-                    <div className='feedback-msg'>
-                      <p
-                        className='text-wrap text-truncate'
-                        style={{
-                          fontSize: "20px",
-                          fontFamily: "sans-serif",
-                          wordSpacing: "2px",
-                        }}
-                      >
-                        {feedback.message}
-                        <hr className='feedbackLine' />
-                      </p>
-                    </div>
-                    <div className='feedback-author'>
-                      <p
-                        style={{
-                          fontWeight: "bold",
-                          color: "#456c33",
-                          marginBottom: "32px",
-                        }}
-                      >
-                        {feedback.author}
-                      </p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
           </div>
         </div>
