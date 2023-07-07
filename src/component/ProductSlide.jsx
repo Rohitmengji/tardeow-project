@@ -134,6 +134,7 @@ function ProductSlide() {
                     variant='top'
                     src={product.image}
                     alt={product.name}
+                    loading='lazy'
                   />
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>{renderStars(product.rating)}</Card.Text>
