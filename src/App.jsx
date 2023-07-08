@@ -20,7 +20,7 @@ const App = () => {
   return (
     <CartProvider>
       <ProductContext.Provider value={{ selectedProduct, setSelectedProduct }}>
-        <  >
+        <>
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />
