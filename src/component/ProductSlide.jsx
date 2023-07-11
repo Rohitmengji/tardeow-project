@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar,
-  faSearch,
+  faSearch, 
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -163,7 +163,7 @@ function ProductSlide() {
                   {/* the user can hover to see the icon  */}
                   {hoverIndex === index && showIcons && (
                     <div className='middle flex align-items-center justify-content-center gap-2'>
-                      <Link to={"/oils"}>
+                      <Link to={"/"}>
                         <span
                           className='bg-white d-flex align-items-center justify-center px-2 py-2 text-black'
                           style={{ borderRadius: "50px" }}
@@ -171,7 +171,7 @@ function ProductSlide() {
                           <FontAwesomeIcon icon={faSearch} />
                         </span>
                       </Link>
-                      <Link to={"/oils"}>
+                      <Link to={"/"}>
                         <span className='bg-white d-flex items-center justify-content-center px-2 py-2 text-black rounded-circle'>
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
