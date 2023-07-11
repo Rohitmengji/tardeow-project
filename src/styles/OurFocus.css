@@ -1,19 +1,18 @@
 .our-focus-container {
     background-color: #edf0f5;
     height: auto;
-    max-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     justify-content: center;
     margin-bottom: 2rem;
 }
+
 .circle-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 210px;
+    height: 220px;
     /* Increase the height as desired */
 }
 
@@ -26,7 +25,6 @@
     justify-content: center;
 }
 
-
 .circle-logo {
     max-width: 90%;
     max-height: 90%;
@@ -34,4 +32,4 @@
 
 .circle-name {
     margin-top: 0.8rem;
-}
+}   

@@ -33,8 +33,8 @@ function InsideNav() {
 
   return (
     <>
-      <div className='TarOdew overflow-hidden'>
-        <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color'>
+      <div className='TarOdew overflow-hidden '>
+        <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color mx-4'>
           <div className='container-fluid  '>
             <NavLink className='navbar-brand' to='/'>
               <img src={logo} alt='Tarodew' />
@@ -71,17 +71,17 @@ function InsideNav() {
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='/honey'>
+                  <NavLink className='nav-link brown' to='/honey'>
                     HONEY
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='/ghee'>
+                  <NavLink className='nav-link brown' to='/ghee'>
                     GHEE
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='/my-account'>
+                  <NavLink className='nav-link brown' to='/my-account'>
                     MY ACCOUNT
                   </NavLink>
                 </li>

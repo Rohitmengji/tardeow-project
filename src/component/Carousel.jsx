@@ -14,7 +14,7 @@ const   CarouselComponent = () => {
           showIndicators={true}
           className='carousel-dots'
         >
-          <div className='mb-5 mt-3 '>
+          <div className='mb-5 mt-4 '>
             <img
               style={{
                 height: "300px",
@@ -24,7 +24,7 @@ const   CarouselComponent = () => {
               className='carousel-image'
             />
           </div>
-          <div className='mt-3'>
+          <div className='mt-4'>
             <img
               style={{ height: "300px" }}
               src='../assets/products_1.png'
@@ -33,7 +33,7 @@ const   CarouselComponent = () => {
             />
           </div>
 
-          <div className='mt-3'>
+          <div className='mt-4'>
             <img
               style={{ height: "300px" }}
               src='../assets/products_1.png'

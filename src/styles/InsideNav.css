@@ -1,5 +1,5 @@
 .TarOdew {
-    background-color: #fceeed;
+    background-color: #f4d8d6;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -19,12 +19,12 @@
 
     
     white-space: wrap;
-    width: 100%;
+    /* width: 100%;  */
 }
 
 .brown {
-    color: #5e272c;
-    width: 100%;
+    color: #5e272c !important;
+    /* width: 100%; */
 }
 
 
@@ -103,7 +103,7 @@
 }
 
 .fixed-image{
-    background-image: url('/assets/aboutfixedpage.jpg');
+    background-image: url('/public/assets/aboutfixedpage.jpg');
     background-position :center;
     background-size: cover;
     background-repeat: no-repeat;

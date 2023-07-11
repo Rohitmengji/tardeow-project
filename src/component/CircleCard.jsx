@@ -67,7 +67,7 @@ const CircleCard = () => {
                   className='circle-logo'
                 />
               </div>
-              <h6 className='circle-name fw-bold'>{circleCard.name}</h6>
+              <h5 className='circle-name fw-bold'>{circleCard.name}</h5>
             </div>
           </div>
         ))}

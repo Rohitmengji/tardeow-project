@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar,
-  faSearch, 
+  faSearch,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,38 +15,11 @@ import "../styles/styles.css";
 
 // import required modules
 import { Autoplay, Keyboard, Navigation } from "swiper";
-import { useContext, useState } from "react";
+// import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { ProductContext } from "../Store/ProductContext";
+// import { ProductContext } from "../Store/ProductContext";
 
 function ProductSlide() {
-  // const [hoverIndex, setHoverIndex] = useState(null);
-
-  // const handleMouseEnter = (index) => {
-  //   setHoverIndex(index);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setHoverIndex(null);
-  // };
-
-  const [hoverIndex, setHoverIndex] = useState(null);
-  const [showIcons, setShowIcons] = useState(false);
-
-  const { setSelectedProduct } = useContext(ProductContext);
-
-  const handleMouseEnter = (index) => {
-    setHoverIndex(index);
-    setTimeout(() => {
-      setShowIcons(true);
-    }, 200);
-  };
-
-  const handleMouseLeave = () => {
-    setHoverIndex(null);
-    setShowIcons(false);
-  };
-
   const products = [
     {
       name: "Desi Cow Ghee",
@@ -134,34 +107,15 @@ function ProductSlide() {
       >
         {products.map((product, index) => (
           <SwiperSlide key={index}>
-            <div
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            >
+            <div>
               <Card
                 className='mx-3 content'
                 border='0'
                 style={{ boxShadow: "revert-layer" }}
               >
                 <Card.Body className='d-flex flex-column justify-content-between flex items-center justify-center relative'>
-                  <div className='content-overlay'></div>
-                  <Card.Img
-                    style={{
-                      width: "100%",
-                      height: "230px",
-                      objectFit: "cover",
-                    }}
-                    variant='top'
-                    src={product.image}
-                    alt={product.name}
-                  />
-                  <Card.Title>{product.name}</Card.Title>
-                  <Card.Text>{renderStars(product.rating)}</Card.Text>
-                  <Card.Text style={{ marginBottom: "9px" }}>
-                    Price: {product.price}
-                  </Card.Text>
-                  {/* the user can hover to see the icon  */}
-                  {hoverIndex === index && showIcons && (
+                  <div className='content-overlay'>
+
                     <div className='middle flex align-items-center justify-content-center gap-2'>
                       <Link to={"/"}>
                         <span
@@ -183,15 +137,30 @@ function ProductSlide() {
                         </span>
                       </Link>
                       <Link to={"/productDetails"}>
-                        <span
-                          className='bg-white flex align-items-center justify-content-center px-2 py-1 text-black rounded-circle'
-                          onClick={() => setSelectedProduct(product)}
-                        >
+                        <span className='bg-white flex align-items-center justify-content-center px-2 py-1 text-black rounded-circle'>
                           <FontAwesomeIcon icon={faCartShopping} />
                         </span>
                       </Link>
                     </div>
-                  )}
+
+                    
+                  </div>
+                  <Card.Img
+                    style={{
+                      width: "100%",
+                      height: "230px",
+                      objectFit: "cover",
+                    }}
+                    variant='top'
+                    src={product.image}
+                    alt={product.name}
+                  />
+                  <Card.Title>{product.name}</Card.Title>
+                  <Card.Text>{renderStars(product.rating)}</Card.Text>
+                  <Card.Text style={{ marginBottom: "9px" }}>
+                    Price: {product.price}
+                  </Card.Text>
+                  {/* the user can hover to see the icon  */}
                 </Card.Body>
               </Card>
             </div>
