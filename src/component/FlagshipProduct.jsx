@@ -94,7 +94,7 @@ function FlagshipProduct() {
           424: {
             slidesPerView: 1,
           },
-        
+
           768: {
             slidesPerView: 2,
           },
@@ -145,8 +145,8 @@ function FlagshipProduct() {
                   <Card.Img
                     style={{
                       width: "100%",
-                      height: "217px",
-                      objectFit: "cover",
+                      height: "210px",
+                      // objectFit: "cover",
                     }}
                     variant='top'
                     src={product.image}
@@ -157,7 +157,6 @@ function FlagshipProduct() {
                   <Card.Text style={{ marginBottom: "2px" }}>
                     Price: {product.price}
                   </Card.Text>
-                  {/* the user can hover to see the icon  */}
                 </Card.Body>
               </Card>
             </div>

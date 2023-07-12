@@ -30,7 +30,7 @@
 }
 
 .font-change-h{
-    text-align: left;
+    /* text-align: left; */
     font: normal normal bold  'Titillium Web';
     letter-spacing: 0px;
     color: #5F272C;
@@ -75,6 +75,11 @@
         color: #5F272C;
         font-weight: 800;
 }
+
+.bulk {
+        left: 55% !important;
+        }
+
 
 
 

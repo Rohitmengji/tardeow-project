@@ -66,22 +66,25 @@ function InsideNav() {
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link black' to='/oils'>
+                  <NavLink className='nav-link black fw-medium' to='/oils'>
                     OILS
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link black' to='/honey'>
+                  <NavLink className='nav-link black fw-medium' to='/honey'>
                     HONEY
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link black' to='/ghee'>
+                  <NavLink className='nav-link black fw-medium' to='/ghee'>
                     GHEE
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link black' to='/my-account'>
+                  <NavLink
+                    className='nav-link black fw-medium'
+                    to='/my-account'
+                  >
                     MY ACCOUNT
                   </NavLink>
                 </li>

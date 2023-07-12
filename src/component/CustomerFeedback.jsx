@@ -41,65 +41,49 @@ const CustomerFeedback = () => {
   return (
     <div className='customer-feedback-container box'>
       <div className='container'>
-        <div className='c'>
-          <div className='text-center mb-4'>
-            <h2 className='mb-3 mt-3 text-white'>What Our Customers Say</h2>
-          </div>
-          <div className='container  col-lg-8 col-md-7 flex-column  col-sm-12  mb-5'>
-            <Swiper
-              pagination={{ clickable: true }}
-              spaceBetween={50}
-              slidesPerView={1}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
-            >
-              {feedbackData.map((feedback, index) => {
-                return (
-                  <SwiperSlide key={index}>
-                    <div className='feedbackmsg '>
-                      <div className='qoute-img'>
-                        <img
-                          className='d-block'
-                          src='../assets/Group 54.png'
-                          alt='Quote Icon'
-                          style={{
-                            objectFit: "contain",
-                            height: "80px",
-                            width: "58px",
-                          }} />
-                      </div>
-                      <div className='feedback-msg'>
-                        <p
-                          className='text-wrap text-truncate'
-                          style={{
-                            fontSize: "20px",
-                            fontFamily: "sans-serif",
-                            wordSpacing: "2px",
-                          }}
-                        >
-                          {feedback.message}
-                        </p>
-                          <hr className='feedbackLine' />
-                      </div>
-                      <div className='feedback-author'>
-                        <p
-                          style={{
-                            fontWeight: "bold",
-                            color: "#456c33",
-                            marginBottom: "32px",
-                          }}
-                        >
-                          {feedback.author}
-                        </p>
-                      </div>
+        <div className='text-center mb-4'>
+          <h2 className='mb-3 mt-3 text-white font-change-h'>
+            What Our Customers Says
+          </h2>
+        </div>
+        <div className='container   mb-5'>
+          <Swiper
+            // pagination={{ clickable: true }}
+            spaceBetween={50}
+            slidesPerView={1}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+          >
+            {feedbackData.map((feedback, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div className='qoute-img'>
+                    <img
+                      className='d-block'
+                      src='../assets/Group 54.png'
+                      alt='Quote Icon'
+                      style={{
+                        objectFit: "contain",
+                        height: "73px !important",
+                        width: "79px",
+                      }}
+                    />
+                  </div>
+                  <div className='feedbackmsg '>
+                    <div className='feedback-msg'>
+                      <p>{feedback.message}</p>
+                      <hr className='feedbackLine' />
                     </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </div>
+                    <div className='feedback-author'>
+                      <p className='author-text'>{feedback.author}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
     </div>
