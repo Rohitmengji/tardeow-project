@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wgh  t@700&display=swap');
 
 /* Apply box-sizing: border-box to all elements */
 * {
@@ -25,6 +26,7 @@ body {
     /* background-color: #fceeed; */
     display: flex;
     flex-direction: column;
+     font-family: 'Open Sans', sans-serif;;
 }
 
 
@@ -35,5 +37,7 @@ body {
     overflow-x: hidden;
     /* Hide horizontal overflow */
 }
+
+
 
 /* Add additional CSS rules as needed to adjust the layout and styling of your components */

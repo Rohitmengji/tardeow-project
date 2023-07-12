@@ -3,17 +3,18 @@ import CarouselComponent from "./Carousel";
 
 const InsideCarousel = () => {
   const buttonStyle = {
-    backgroundColor: "#486a37",
-    // Add other desired styles
+    background: "#456D33 0% 0% no-repeat padding-box",  
+    borderRadius: "5px",
+    opacity: "1",
   };
   return (
     <div>
       <div className='container-fluid TarOdew'>
-        <div className='row'>
-          <div className='col-md-4 mx-4'>
+        <div className='row mt-2'>
+          <div className='col-md-4 col-xl-4 mx-4'>
             <h3 className='aligning'>
-              <span className='green d-block'>ENJOY THE BENEFITS OF</span>
-              <strong className='brown bold'>COLD PRESSED OILS</strong>
+              <span className='st-1 d-block'>ENJOY THE BENEFITS OF</span>
+              <strong className='st-2'>COLD PRESSED OILS</strong>
             </h3>
             <NavLink
               to='/shopnow'

@@ -4,7 +4,7 @@ import "../styles/InsideNav.css";
 import InsideCarousel from "./InsideCarousel";
 import Categories from "./Categories";
 import CircleCard from "./CircleCard";
-import ProductSlide from "./ProductSlide";
+import ProductSlide from "./FlagshipProduct";
 import BulkOrderSection from "./BulkOrderSection";
 import CustomerFeedback from "./CustomerFeedback";
 import ImageDisplay from "./ImageDisplay";
@@ -33,9 +33,9 @@ function InsideNav() {
 
   return (
     <>
-      <div className='TarOdew overflow-hidden '>
-        <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color mx-4'>
-          <div className='container-fluid  '>
+      <div className=' TarOdew overflow-hidden '>
+        <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color '>
+          <div className='container'>
             <NavLink className='navbar-brand' to='/'>
               <img src={logo} alt='Tarodew' />
             </NavLink>
@@ -56,8 +56,8 @@ function InsideNav() {
               } justify-content-center mx-auto`}
               id='navbarNav'
             >
-              <ul className='navbar-nav justify-content-center col-lg-8'>
-                <li className='nav-item'>
+              <ul className='navbar-nav justify-content-center gap-1 col-lg-8'>
+                <li className='nav-item '>
                   <NavLink
                     className='nav-link brown  fw-medium  '
                     to='/best-deals'
@@ -66,22 +66,22 @@ function InsideNav() {
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link brown' to='/oils'>
+                  <NavLink className='nav-link black' to='/oils'>
                     OILS
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link brown' to='/honey'>
+                  <NavLink className='nav-link black' to='/honey'>
                     HONEY
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link brown' to='/ghee'>
+                  <NavLink className='nav-link black' to='/ghee'>
                     GHEE
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink className='nav-link brown' to='/my-account'>
+                  <NavLink className='nav-link black' to='/my-account'>
                     MY ACCOUNT
                   </NavLink>
                 </li>
@@ -92,19 +92,19 @@ function InsideNav() {
                   isCollapsed ? "" : "show"
                 }`}
               >
-                <div className='search-bar mx-2 mb-1'>
+                <div className='mx-3 mb-1'>
                   {/* Search bar component */}
                   <NavLink to='/search'>
                     <img width={"19px"} src={searchIcon} alt='search' />
                   </NavLink>
                 </div>
-                <div className='profile-logo mx-2 mb-1'>
+                <div className=' mx-2 mb-1'>
                   {/* Profile logo component */}
                   <NavLink>
                     <img width={"19px"} src={userIcon} alt='user' />
                   </NavLink>
                 </div>
-                <div className='cart-logo mx-2 mb-1'>
+                <div className=' mx-3 mb-1'>
                   {/* Cart logo component */}
                   <NavLink to='/mycart'>
                     <img width={"19px"} src={cartIcon} alt='cart' />

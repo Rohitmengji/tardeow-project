@@ -11,7 +11,7 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 
-import "../styles/styles.css";
+import "../styles/flagship.css";
 
 // import required modules
 import { Autoplay, Keyboard, Navigation } from "swiper";
@@ -19,7 +19,7 @@ import { Autoplay, Keyboard, Navigation } from "swiper";
 import { Link } from "react-router-dom";
 // import { ProductContext } from "../Store/ProductContext";
 
-function ProductSlide() {
+function FlagshipProduct() {
   const products = [
     {
       name: "Desi Cow Ghee",
@@ -71,14 +71,16 @@ function ProductSlide() {
     }
     return stars;
   };
+
   return (
     <div className='container mb-5'>
       <>
-        <h2 className='text-center brown mb-4'>Our Flagship Products</h2>
+        <h2 className='text-center font-change-h mb-4'>
+          Our Flagship Products
+        </h2>
       </>
       <Swiper
         mousewheel={true}
-        slidesPerView={2} // Display two cards per slide
         keyboard={{
           enabled: true,
         }}
@@ -90,13 +92,11 @@ function ProductSlide() {
             slidesPerView: 1,
           },
           424: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
-          767: {
+        
+          768: {
             slidesPerView: 2,
-          },
-          820: {
-            slidesPerView: 3,
           },
           991: {
             slidesPerView: 3,
@@ -113,10 +113,9 @@ function ProductSlide() {
                 border='0'
                 style={{ boxShadow: "revert-layer" }}
               >
-                <Card.Body className='d-flex flex-column justify-content-between flex items-center justify-center relative'>
+                <Card.Body className='d-flex flex-column  flex items-center justify-content-center relative'>
                   <div className='content-overlay'>
-
-                    <div className='middle flex align-items-center justify-content-center gap-2'>
+                    <div className='middle flex align-items-center justify-content-center gap-3'>
                       <Link to={"/"}>
                         <span
                           className='bg-white d-flex align-items-center justify-center px-2 py-2 text-black'
@@ -142,13 +141,11 @@ function ProductSlide() {
                         </span>
                       </Link>
                     </div>
-
-                    
                   </div>
                   <Card.Img
                     style={{
                       width: "100%",
-                      height: "230px",
+                      height: "217px",
                       objectFit: "cover",
                     }}
                     variant='top'
@@ -157,7 +154,7 @@ function ProductSlide() {
                   />
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>{renderStars(product.rating)}</Card.Text>
-                  <Card.Text style={{ marginBottom: "9px" }}>
+                  <Card.Text style={{ marginBottom: "2px" }}>
                     Price: {product.price}
                   </Card.Text>
                   {/* the user can hover to see the icon  */}
@@ -171,4 +168,4 @@ function ProductSlide() {
   );
 }
 
-export default ProductSlide;
+export default FlagshipProduct;

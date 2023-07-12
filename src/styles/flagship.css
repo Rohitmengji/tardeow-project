@@ -3,7 +3,11 @@
   overflow-x: hidden;
 }
 
+
 .swiper-slide {
+
+  width: 321px;
+  height: 408px;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -12,10 +16,11 @@
   align-items: center;
 }
 
+
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+width: 321px;
+  height: 321px;
 }
 
 .content {
@@ -36,10 +41,14 @@
 }
 
 .content:hover .content-overlay {
-  opacity: 0.7;
-  background: #68e12f;
+    background: #456D33 0% 0% no-repeat padding-box;
+    mix-blend-mode: hard-light;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
   transition: opacity 0.4s;
-  border-radius: 5%;
+  border-radius: 15px;
 }
 
 .middle {
@@ -81,6 +90,7 @@
     flex-direction: row;
     top: 49%;
     left: 46%;
+    background-color: #fff;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

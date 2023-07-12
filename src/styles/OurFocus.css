@@ -1,3 +1,11 @@
+.focus {
+    text-align: center;
+    font: normal normal 600 'Segoe UI';
+    letter-spacing: 0px;
+    color: #5f272c;
+    opacity: 1;
+}
+
 .our-focus-container {
     background-color: #edf0f5;
     height: auto;
@@ -17,12 +25,13 @@
 }
 
 .circle {
-    width: 140px;
-    height: 120px;
+    width: 114px;
+    height: 114px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .circle-logo {
@@ -30,6 +39,20 @@
     max-height: 90%;
 }
 
+.circle-hover-logo {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.circle:hover .circle-hover-logo {
+    opacity: 1;
+}
+
 .circle-name {
     margin-top: 0.8rem;
-}   
+    font-size: medium;
+}

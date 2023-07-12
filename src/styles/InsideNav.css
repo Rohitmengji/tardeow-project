@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
 .TarOdew {
-    background-color: #f4d8d6;
+    background: #FDEEEE 0% 0% no-repeat padding-box;
+    opacity: 1;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -15,26 +19,35 @@
 }
 
 .green {
-    color: #637e52;
-
-    
+    color: #637e52;    
     white-space: wrap;
     /* width: 100%;  */
 }
 
 .brown {
     color: #5e272c !important;
-    /* width: 100%; */
+    font-family: 'Open Sans';
 }
 
-
+.font-change-h{
+    text-align: left;
+    font: normal normal bold  'Titillium Web';
+    letter-spacing: 0px;
+    color: #5F272C;
+    font-weight: bold;
+    opacity: 1;
+}
 
 
 .aligning {
-    margin-top: 5.0rem !important;
-    /* padding-right : 0.5rem */
+    margin-top: 4.7rem !important;
+    line-height: 1.1;
 }
 
+.carousel .control-dots .dot.selected{
+    background: #456D33 0% 0% no-repeat padding-box;
+        opacity: 1;
+}
 
 
 .icons {
@@ -48,6 +61,20 @@
   text-align: center; /* Add this line to center the nav items */
 }
 
+.st-1{
+    color: var(--unnamed-color-456d33);
+        font: normal normal normal 33px/50px ;
+        font-family: 'Titillium Web';
+        letter-spacing: 0px;
+        color: #456D33;
+        opacity: 1;
+}
+
+.st-2{
+    letter-spacing: 0px;
+        color: #5F272C;
+        font-weight: 800;
+}
 
 
 
@@ -102,12 +129,12 @@
         
 }
 
-.fixed-image{
+/* .fixed-image{
     background-image: url('/public/assets/aboutfixedpage.jpg');
     background-position :center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 42%;
     height: 49vh !important;
-}
+} */
 
