@@ -5,7 +5,6 @@
 
 
 .swiper-slide {
-
   width: 321px;
   height: 408px;
   text-align: center;
@@ -64,13 +63,13 @@ width: 321px;
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.4s;
   cursor: pointer;
 }
 
 .content:hover .middle {
   opacity: 1;
-  transition-delay: 0.3s;
+  transition-delay: 0.4s;
 }
 
 /* Specific CSS for iOS Safari */

@@ -11,6 +11,7 @@ const Categories = () => {
             loading='lazy'
             style={{
               objectFit: "contain",
+              maxWidth: "95%",
               height: "250px !important",
               borderRadius: "15%",
               // background: "transparent 0% 0% no-repeat padding-box",
@@ -41,6 +42,7 @@ const Categories = () => {
             style={{
               objectFit: "contain",
               height: "250px !important",
+              maxWidth: "95%",
               borderRadius: "15%",
             }}
             src='../assets/Honey_1kg_advitise.jpg'
@@ -68,6 +70,7 @@ const Categories = () => {
             style={{
               objectFit: "contain",
               height: "250px !important",
+              maxWidth: "95%",
               borderRadius: "15%",
             }}
             src='../assets/Ghee_1Ltr_advitise.jpg'
@@ -83,7 +86,7 @@ const Categories = () => {
                 color: "#333333",
                 opacity: 1,
               }}
-            >
+            > 
               Ghee
             </p>
           </div>

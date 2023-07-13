@@ -22,7 +22,7 @@ const BulkOrderSection = () => {
                   opacity: 1,
                 }}
               >
-                Looking for Bulk Orders?
+                Looking for Bulk Orders ?
               </h3>
               <button
                 className='btn btn-success mx-1 mt-2'
@@ -36,7 +36,7 @@ const BulkOrderSection = () => {
                   opacity: 1,
                 }}
               >
-                Drop Mail
+                Drop a Mail
               </button>
             </div>
           </div>

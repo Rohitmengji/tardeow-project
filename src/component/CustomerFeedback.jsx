@@ -17,7 +17,7 @@ const CustomerFeedback = () => {
   const feedbackData = [
     {
       message:
-        "Great products, worth buying. Its pure and we could easily differentiate.",
+        "Great products, worth buying.<br> Its pure and we could easily differentiate.",
       author: "Arjun S H, Bengaluru",
     },
     {
@@ -39,16 +39,16 @@ const CustomerFeedback = () => {
   ];
 
   return (
-    <div className='customer-feedback-container box'>
-      <div className='container'>
+    <div className='container-fluid mb-4'>
+      <div className='customer-feedback-container'>
         <div className='text-center mb-4'>
           <h2 className='mb-3 mt-3 text-white font-change-h'>
             What Our Customers Says
           </h2>
         </div>
-        <div className='container   mb-5'>
+        <div style={{ maxWidth: "777px" }} className='mb-5 container'>
           <Swiper
-            // pagination={{ clickable: true }}
+            pagination={{ clickable: true }}
             spaceBetween={50}
             slidesPerView={1}
             autoplay={{
@@ -58,7 +58,7 @@ const CustomerFeedback = () => {
           >
             {feedbackData.map((feedback, index) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} style={{ maxHeight: "181px" }}>
                   <div className='qoute-img'>
                     <img
                       className='d-block'
@@ -73,7 +73,9 @@ const CustomerFeedback = () => {
                   </div>
                   <div className='feedbackmsg '>
                     <div className='feedback-msg'>
-                      <p>{feedback.message}</p>
+                      <p
+                        dangerouslySetInnerHTML={{ __html: feedback.message }}
+                      ></p>
                       <hr className='feedbackLine' />
                     </div>
                     <div className='feedback-author'>
