@@ -46,9 +46,9 @@ const CustomerFeedback = () => {
             What Our Customers Says
           </h2>
         </div>
-        <div style={{ maxWidth: "777px" }} className='mb-5 container'>
+        <div style={{ maxWidth: "777px", }} className='mb-5 container'>
           <Swiper
-            pagination={{ clickable: true }}
+            // pagination={{ clickable: true }}
             spaceBetween={50}
             slidesPerView={1}
             autoplay={{
@@ -58,7 +58,7 @@ const CustomerFeedback = () => {
           >
             {feedbackData.map((feedback, index) => {
               return (
-                <SwiperSlide key={index} style={{ maxHeight: "181px" }}>
+                <SwiperSlide key={index} style={{ maxHeight: "181px",borderRadius:'17px' }}>
                   <div className='qoute-img'>
                     <img
                       className='d-block'

@@ -73,7 +73,7 @@ function FlagshipProduct() {
   };
 
   return (
-    <div className='container mb-5'>
+    <div className='container mb-4'>
       <>
         <h2 className='text-center font-change-h mb-4'>
           Our Flagship Products

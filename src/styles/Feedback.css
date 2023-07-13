@@ -33,17 +33,18 @@
     top: var(--swiper-pagination-top, auto);
     left: 0;
     width: 100%;
-}   
+    }   
 
 .qoute-img {
-    margin-top: 2px;
-    margin-bottom: 105px;   
-    margin-right: 40px;
+    margin-top: 47px;
+        margin-bottom: 105px;
+        margin-right: 68px;
 }
 
 
 .feedbackmsg .feedback-msg p {
-    font: normal normal 17px 'Open Sans';
+    font: normal normal 600 19px 'open sans';
+    text-align: left;
     word-spacing: 2px;
     white-space: pre-line;
     

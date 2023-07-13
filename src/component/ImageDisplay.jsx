@@ -3,11 +3,11 @@
 const ImageDisplay = () => {
   return (
     <div className='overflow-hidden'>
-      <div className='mt-4'>
+      <div className='mt-2'>
         <img
           src={"../assets/Group 456.jpg"}
           alt='Image 1'
-          style={{ height: "auto", width: "100%" ,maxWidth :'100%', objectFit: "cover" }}
+          style={{ height: "auto", width: "100%" ,maxWidth :'100%', objectFit: "contain" }}
         />
       </div>
       <div className='mt-4 mb-4'>

@@ -30,6 +30,8 @@ const BulkOrderSection = () => {
                   background: "#456D33",
                   fontFamily:'Open Sans',
                   backgroundPosition: "0% 0%",
+                  width: '124px',
+                  height: '45px',
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "padding-box",
                   borderRadius: "5px",
