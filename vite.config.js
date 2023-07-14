@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     outDir: "./dist/tarodew",
     sourcemap: true,
-    // emptyOutDir: true,
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         entryFileNames: "[name].js", 
