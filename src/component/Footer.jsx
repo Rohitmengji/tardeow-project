@@ -2,6 +2,19 @@
 import { Link, NavLink } from "react-router-dom";
 import "../styles/Footer.css";
 import { useState } from "react";
+import logo from "../assets/images/logofinal.png";
+import Hoverfacebook from "../assets/images/Icon awesome-facebook-1.png";
+import facebook from "../assets/images/Icon awesome-facebook.png";
+import hoverTwitter from "../assets/images/Icon awesome-twitter-1.png";
+import twitter from "../assets/images/Icon awesome-twitter.png";
+import hoverLinkedIn from "../assets/images/Icon awesome-linkedin-in-1.png";
+import LinkedIn from "../assets/images/Icon awesome-linkedin-in.png";
+import Hoverlocation from "../assets/images/Group 603.png";
+import location from "../assets/images/Group 44.png";
+import hoverEmail from "../assets/images/Group 604.png";
+import email from "../assets/images/Group 45.png";
+import hoverCall from "../assets/images/Group 605.png";
+import call from "../assets/images/Group 46.png";
 
 const Footer = () => {
   const [isFacebookHovered, setIsFacebookHovered] = useState(false);
@@ -50,15 +63,11 @@ const Footer = () => {
       <div className='container-fluid bgcolor text-justify p-3'>
         <footer className='row'>
           <div className='container mb-2 col-sm-3 col-lg-4 col-md-5 p-3'>
-            {/* <NavLink to='/' className='mb-3text-decoration-none'> */}
-              <img
-                className=' footer-logo'
-                src='../assets/images/logo.png'
-                alt='logo'
-              />
-            {/* </NavLink> */}
+            <NavLink to='/' className='mb-3text-decoration-none'>
+              <img className=' footer-logo' src={logo} alt='logo' />
+            </NavLink>
             <p
-              style={{ fontSize: "14px", color: "#5F272C", }}
+              style={{ fontSize: "14px", color: "#5F272C" }}
               className='fw-medium  mt-2'
             >
               make sure to include the necessary for the icons dependencies in
@@ -69,11 +78,7 @@ const Footer = () => {
             <div className='social-media d-flex  gap-2 pt-2  align-items-center'>
               <NavLink to='https://www.facebook.com' target='_blank'>
                 <img
-                  src={
-                    isFacebookHovered
-                      ? "../assets/images/Icon awesome-facebook-1.png"
-                      : "../assets/images/Icon awesome-facebook.png"
-                  }
+                  src={isFacebookHovered ? Hoverfacebook : facebook}
                   alt='Facebook'
                   onMouseEnter={handleFacebookHover}
                   onMouseLeave={handleFacebookMouseLeave}
@@ -84,8 +89,8 @@ const Footer = () => {
                 <img
                   src={
                     isTwitterHovered
-                      ? "../assets/images/Icon awesome-twitter-1.png"
-                      : "../assets/images/Icon awesome-twitter.png"
+                      ? hoverTwitter
+                      : twitter
                   }
                   alt='Twitter'
                   onMouseEnter={handleTwitterHover}
@@ -97,8 +102,8 @@ const Footer = () => {
                 <img
                   src={
                     isLinkedInHovered
-                      ? "../assets/images/Icon awesome-linkedin-in-1.png"
-                      : "../assets/images/Icon awesome-linkedin-in.png"
+                      ? hoverLinkedIn
+                      : LinkedIn
                   }
                   alt='LinkedIn'
                   onMouseEnter={handleLinkedInHover}
@@ -108,6 +113,7 @@ const Footer = () => {
               </NavLink>
             </div>
           </div>
+
           <div className='col-md-3 mt-4'>
             <div
               style={{
@@ -187,8 +193,8 @@ const Footer = () => {
                       style={{ width: "50px !important" }}
                       src={
                         hoverState.isLocationHovered
-                          ? "../assets/images/Group 603.png"
-                          : "../assets/images/Group 44.png"
+                          ? Hoverlocation
+                          : location
                       }
                       alt='location'
                       onMouseEnter={() =>
@@ -200,7 +206,7 @@ const Footer = () => {
                     />
                   </Link>
                   <span className='ps-1 fw-medium greencol '>
-                    Lorem ipsum, dolor sit amet elit 
+                    Lorem ipsum, dolor sit amet elit
                   </span>
                 </li>
                 <li className='d-flex mb-2 align-items-left'>
@@ -208,8 +214,8 @@ const Footer = () => {
                     <img
                       src={
                         hoverState.isEmailHovered
-                          ? "../assets/images/Group 604.png"
-                          : "../assets/images/Group 45.png"
+                          ? hoverEmail
+                          : email
                       }
                       alt='email'
                       onMouseEnter={() => handleHover("isEmailHovered", true)}
@@ -225,8 +231,8 @@ const Footer = () => {
                     <img
                       src={
                         hoverState.isPhoneNumberHovered
-                          ? "../assets/images/Group 605.png"
-                          : "../assets/images/Group 46.png"
+                          ? hoverCall
+                          : call
                       }
                       alt='phoneNumber'
                       onMouseEnter={() =>

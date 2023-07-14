@@ -8,23 +8,23 @@ import { Container } from "react-bootstrap";
 import "../styles/TarodewNav.css";
 
 function TarOdewNav() {
-  const logo = "../assets/images/logo.png";
+  const logo = "../src/assets/images/logo.png";
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const [searchIcon, setSearchIcon] = useState("../assets/images/top-ios-search.png");
-  const [userIcon, setUserIcon] = useState("../assets/images/top-user.png");
-  const [cartIcon, setCartIcon] = useState("../assets/images/top-shopping-cart.png");
+  const [searchIcon, setSearchIcon] = useState("../src/assets/images/top-ios-search.png");
+  const [userIcon, setUserIcon] = useState("../src/assets/images/top-user.png");
+  const [cartIcon, setCartIcon] = useState("../src/assets/images/top-shopping-cart.png");
   const location = useLocation();
 
   const handleToggle = () => {
     setIsCollapsed(!isCollapsed);
     if (isCollapsed) {
-      setSearchIcon("../assets/images/Icon ionic-ios-search-1.png");
-      setUserIcon("../assets/images/user.png");
-      setCartIcon("../assets/images/Icon feather-shopping-cart-1.png");
+      setSearchIcon("../src/assets/images/Icon ionic-ios-search-1.png");
+      setUserIcon("../src/assets/images/user.png");
+      setCartIcon("../src/assets/images/Icon feather-shopping-cart-1.png");
     } else {
-      setSearchIcon("../assets/images/top-ios-search.png");
-      setUserIcon("../assets/images/top-user.png");
-      setCartIcon("../assets/images/top-shopping-cart.png");
+      setSearchIcon("../src/assets/images/top-ios-search.png");
+      setUserIcon("../src/assets/images/top-user.png");
+      setCartIcon("../src/assets/images/top-shopping-cart.png");
     }
   };
 
@@ -33,7 +33,7 @@ function TarOdewNav() {
   const isHoneypage = location.pathname === "/honey";
   const isProductPage = location.pathname === "/productDetails";
   return (
-    <div className='TarOdew p-1 overflow-hidden'>
+    <div className='TarOdew  overflow-hidden'>
       <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color'>
         <Container>
           <NavLink className='navbar-brand' to='/'>

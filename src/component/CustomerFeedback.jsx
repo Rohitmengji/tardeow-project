@@ -12,6 +12,7 @@ import SwiperCore, { Pagination } from "swiper/core";
 
 // Install Swiper modules
 SwiperCore.use([Pagination]);
+import qouteIcon from "../assets/images/Group 54.png";
 
 const CustomerFeedback = () => {
   const feedbackData = [
@@ -58,11 +59,14 @@ const CustomerFeedback = () => {
           >
             {feedbackData.map((feedback, index) => {
               return (
-                <SwiperSlide key={index} style={{ maxHeight: "181px",borderRadius:'17px' }}>
+                <SwiperSlide
+                  key={index}
+                  style={{ maxHeight: "181px", borderRadius: "17px" }}
+                >
                   <div className='qoute-img'>
                     <img
                       className='d-block'
-                      src='../assets/images/Group 54.png'
+                      src={qouteIcon}
                       alt='Quote Icon'
                       style={{
                         objectFit: "contain",

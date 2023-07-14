@@ -18,6 +18,11 @@ import { Autoplay, Keyboard, Navigation } from "swiper";
 // import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 // import { ProductContext } from "../Store/ProductContext";
+import ghee from '../assets/images/Ghee_1Ltr_bottlee.jpg'
+import honey from "../assets/images/Honey_1kg_Bottlee.jpg";
+import coconutOil from "../assets/images/coconut-oil.webp";
+import groundNut from "../assets/images/groundnutoil.jpg";
+import mustardOil from "../assets/images/mustard-oil.webp";
 
 function FlagshipProduct() {
   const products = [
@@ -25,37 +30,37 @@ function FlagshipProduct() {
       name: "Desi Cow Ghee",
       rating: 5,
       price: "₹650",
-      image: "../assets/images/Ghee_1Ltr_bottlee.jpg",
+      image: ghee,
     },
     {
       name: "Honey",
       rating: 4,
       price: "₹500",
-      image: "../assets/images/Honey_1kg_Bottlee.jpg",
+      image: honey,
     },
     {
       name: "Cocunut Oil",
       rating: 4.5,
       price: "₹290",
-      image: "../assets/images/coconut-oil.webp",
+      image: coconutOil,
     },
     {
       name: "Groundnut Oil",
       rating: 4.5,
       price: "₹290",
-      image: "../assets/images/groundnutoil.jpg",
+      image: groundNut
     },
     {
       name: "Mustard Oil",
       rating: 4,
       price: "₹290",
-      image: "../assets/images/mustard-oil.webp",
+      image: mustardOil
     },
     {
       name: "Groundnut Oil",
       rating: 4,
       price: "₹290",
-      image: "../assets/images/groundnutoil.jpg",
+      image: groundNut,
     },
 
     // Add more products here

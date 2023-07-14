@@ -1,21 +1,29 @@
 import "../styles/OurFocus.css";
+import Traditional from '../assets/images/Group593.png'
+import hoverTraditional from '../assets/images/Group594.png'
+import natural from '../assets/images/Group595.png'
+import hoverNatural from '../assets/images/Group596.png'
+import refine from '../assets/images/Group597.png' 
+import hoverRefine from "../assets/images/Group598.png";
+
+
 
 const CircleCard = () => {
   const circleCards = [
     {
       name: "Traditional",
-      imageSrc: "../assets/images/Group 593.png",
-      hoverImageSrc: "../assets/images/Group 594.png",
+      imageSrc: Traditional,
+      hoverImageSrc: hoverTraditional,
     },
     {
       name: "Natural",
-      imageSrc: "../assets/images/Group 595.png",
-      hoverImageSrc: "../assets/images/Group 596.png",
+      imageSrc: natural,
+      hoverImageSrc: hoverNatural,
     },
     {
       name: "No Refining",
-      imageSrc: "../assets/images/Group 597.png",
-      hoverImageSrc: "../assets/images/Group 598.png",
+      imageSrc: refine,
+      hoverImageSrc: hoverRefine,
     },
   ];
 

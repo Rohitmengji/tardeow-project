@@ -11,7 +11,7 @@ const Oils = () => {
   return (
     <div>
       <TarOdewNav />
-      <Container fluid>
+      <Container>
         <OilsCard />
         <BulkOrderSection />
         <Categories />

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
+import greenShape from '../assets/images/Path1.png'
 
 const Navbar = () => {
   return (
@@ -17,11 +18,7 @@ const Navbar = () => {
               <NavLink to='/contact'>CONTACT</NavLink>
             </li>
           </ul>
-          <img
-            src='../assets/images/Path1.png'
-            alt='Image'
-            className='green-image'
-          />
+          <img src={greenShape} alt='Image' className='green-image' />
         </div>
       </nav>
     </>

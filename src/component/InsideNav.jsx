@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/InsideNav.css";
 import InsideCarousel from "./InsideCarousel";
 import Categories from "./Categories";
 import CircleCard from "./CircleCard";
@@ -9,25 +8,32 @@ import BulkOrderSection from "./BulkOrderSection";
 import CustomerFeedback from "./CustomerFeedback";
 import ImageDisplay from "./ImageDisplay";
 import Footer from "./Footer";
-
-const logo = "../assets/images/logo.png";
+import search from "../assets/images/top-ios-search.png";
+import user from "../assets/images/top-user.png";
+import cart from "../assets/images/top-shopping-cart.png";
+// for hover image
+import blackSearch from "../assets/images/ionic-ios-search-1.png";
+import blackUser from "../assets/images/user.png";
+import blackCart from "../assets/images/Icon feather-shopping-cart-1.png";
+import logo from "../assets/images/logo.png";
+import "../styles/InsideNav.css";
 
 function InsideNav() {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const [searchIcon, setSearchIcon] = useState("../assets/images/top-ios-search.png");
-  const [userIcon, setUserIcon] = useState("../assets/images/top-user.png");
-  const [cartIcon, setCartIcon] = useState("../assets/images/top-shopping-cart.png");
+  const [searchIcon, setSearchIcon] = useState(search);
+  const [userIcon, setUserIcon] = useState(user);
+  const [cartIcon, setCartIcon] = useState(cart);
 
   const handleToggle = () => {
     setIsCollapsed(!isCollapsed);
     if (isCollapsed) {
-      setSearchIcon("../assets/images/Icon ionic-ios-search-1.png");
-      setUserIcon("../assets/images/user.png");
-      setCartIcon("../assets/images/Icon feather-shopping-cart-1.png");
+      setSearchIcon(blackSearch);
+      setUserIcon(blackUser);
+      setCartIcon(blackCart);
     } else {
-      setSearchIcon("../assets/images/top-ios-search.png");
-      setUserIcon("../assets/images/top-user.png");
-      setCartIcon("../assets/images/top-shopping-cart.png");
+      setSearchIcon(search);
+      setUserIcon(user);
+      setCartIcon(cart);
     }
   };
 

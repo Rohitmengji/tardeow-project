@@ -8,6 +8,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../Store/ProductContext";
+import coconutOil from "../assets/images/coconut-oil.webp";
+import groundNut from "../assets/images/groundnutoil.jpg";
+import mustardOil from "../assets/images/mustard-oil.webp";
 
 const OilsCard = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -34,7 +37,7 @@ const OilsCard = () => {
       rating: 4.5,
       price: "₹300",
       MRP: "₹600",
-      image: "../assets/coconut-oil.webp",
+      image: coconutOil,
       productDetails: "/productDetails",
     },
     {
@@ -43,7 +46,7 @@ const OilsCard = () => {
       rating: 4.5,
       price: "₹600",
       MRP: "₹850",
-      image: "../assets/groundnutoil.jpg",
+      image: groundNut,
     },
     {
       id: 3,
@@ -51,8 +54,7 @@ const OilsCard = () => {
       rating: 4,
       price: "₹500",
       MRP: "₹560",
-
-      image: "../assets/mustard-oil.webp",
+      image: mustardOil,
     },
     {
       id: 4,
@@ -60,7 +62,7 @@ const OilsCard = () => {
       rating: 4.5,
       price: "₹600",
       MRP: "₹790",
-      image: "../assets/groundnutoil.jpg",
+      image: groundNut,
     },
     {
       id: 5,
@@ -68,15 +70,15 @@ const OilsCard = () => {
       rating: 4,
       price: "₹600",
       MRP: "₹900",
-      image: "../assets/mustard-oil.webp",
+      image: mustardOil,
     },
     {
       id: 6,
-      name: "Mustard Oil",
+      name: "Coconut Oil",
       rating: 4,
       price: "₹310",
       MRP: "₹490",
-      image: "../assets/mustard-oil.webp",
+      image: coconutOil,
     },
     // Add more oil products here
     // ...
@@ -97,7 +99,7 @@ const OilsCard = () => {
   };
 
   return (
-    <div className='mb-4 '>
+    <div className='mb-4'>
       <div className='d-flex flex-wrap justify-content-around'>
         {products.map((product, index) => (
           <div

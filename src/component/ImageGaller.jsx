@@ -48,14 +48,14 @@ const ImageGallery = () => {
           WebkitOverflowScrolling: "touch",
           scrollbarWidth: "thin",
           msOverflowStyle: "none",
-          "::-webkit-scrollbar": {
+          "::webkitScrollbar": {
             width: "6px",
           },
-          "::-webkit-scrollbar-thumb": {
+          "::webkitScrollbarThumb": {
             borderRadius: "3px",
             background: "#888",
           },
-          "::-webkit-scrollbar-track": {
+          "::webkitScrollbarTrack": {
             background: "#f1f1f1",
           },
         }}
@@ -68,7 +68,12 @@ const ImageGallery = () => {
                 key={product.id}
                 src={product.thumbnail}
                 alt={product.title}
-                style={{ width: "50px", height: "50px", margin: "6px",cursor:'pointer' }}
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  margin: "6px",
+                  cursor: "pointer",
+                }}
                 onClick={() => handleThumbnailClick(product.thumbnail)}
               />
             );

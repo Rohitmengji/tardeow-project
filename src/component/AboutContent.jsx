@@ -7,7 +7,7 @@ const AboutContent = () => {
         <div className='col-12 col-md-4'>
           <div className='card mt-4 border-0'>
             <img
-              src='../assets/Coconut-Oil_1L_advitise.jpg'
+              src='../src/assets/images/Coconut-Oil_1L_advitise.jpg'
               className='card-img-top'
               alt='Card'
               style={{ objectFit: "contain", height: "370px" }}
@@ -21,9 +21,13 @@ const AboutContent = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               quis aliquet nunc, in dictum lectus. Nullam feugiat est auctor
               nisi dictum placerat. Curabitur eget erat eu arcu lobortis
-              scelerisque vel id dui. Duis a ullamcorper massa, vitae
-              pellentesque lorem. Vestibulum ante ipsum primis in faucibus orci
-              luctus et ultrices posuere cubilia Curae; Nullam efficitur
+              scelerisque vel id dui. Duis a ullamcorper massa, vitae Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Est vero,
+              dolore architecto voluptates aut perferendis voluptatibus rerum
+              odit optio dolor consectetur quos. Inventore, necessitatibus at
+              minus autem suscipit totam quis corrupti saepe rem dolores esse
+              ducimus earum perferendis optio ipsa officia vitae nesciunt
+              aliquam recusandae culpa eaqu; Nullam efficitur
               tristique est, vitae scelerisque mauris convallis nec. Sed porta
               efficitur erat vel viverra. Nullam non risus nec felis efficitur
               commodo. Duis in dolor vel ligula suscipit laoreet. Sed sagittis

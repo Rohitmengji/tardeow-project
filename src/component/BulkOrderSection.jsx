@@ -1,3 +1,5 @@
+import bulkbg from "../assets/images/Group 601.jpg";
+
 const BulkOrderSection = () => {
   return (
     <div className='container-fluid mb-5'>
@@ -7,7 +9,7 @@ const BulkOrderSection = () => {
             <img
               loading='lazy'
               style={{ objectFit: "cover", width: "100%", height: "336px" }}
-              src='../assets/images/Group 601.jpg'
+              src={bulkbg}
               alt='Background'
               className='w-100'
             />

@@ -1,3 +1,7 @@
+import oil from "../assets/images/Coconut-Oil_1L_advitise.jpg";
+import honey from "../assets/images/Honey_1kg_advitise.jpg"
+import ghee from '../assets/images/Ghee_1Ltr_advitise.jpg'
+
 const Categories = () => {
   return (
     <div className='container py-5 '>
@@ -6,7 +10,7 @@ const Categories = () => {
       </h2>
 
       <div className='d-flex flex-row jus'>
-        <div className='container  mx-2'>
+        <div className='container  mx-2 p-0'>
           <img
             loading='lazy'
             style={{
@@ -16,7 +20,7 @@ const Categories = () => {
               borderRadius: "15%",
               // background: "transparent 0% 0% no-repeat padding-box",
             }}
-            src='../assets/images/Coconut-Oil_1L_advitise.jpg'
+            src={oil}
             alt='Oils Bottle'
             className='card-image'
           />
@@ -36,7 +40,7 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className='container  mx-2'>
+        <div className='container  mx-2 p-0'>
           <img
             loading='lazy'
             style={{
@@ -45,7 +49,7 @@ const Categories = () => {
               maxWidth: "95%",
               borderRadius: "15%",
             }}
-            src='../assets/images/Honey_1kg_advitise.jpg'
+            src={honey}
             alt='Honey'
             className='card-image'
           />
@@ -64,7 +68,7 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className='container mx-2'>
+        <div className='container mx-2 p-0'>
           <img
             loading='lazy'
             style={{
@@ -73,7 +77,7 @@ const Categories = () => {
               maxWidth: "95%",
               borderRadius: "15%",
             }}
-            src='../assets/images/Ghee_1Ltr_advitise.jpg'
+            src={ghee}
             alt='Ghee'
             className='card-image'
           />
@@ -86,7 +90,7 @@ const Categories = () => {
                 color: "#333333",
                 opacity: 1,
               }}
-            > 
+            >
               Ghee
             </p>
           </div>
