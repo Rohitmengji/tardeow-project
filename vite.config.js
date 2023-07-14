@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/tarodew",
   build: {
     outDir: "./dist/tarodew",
-    sourcemap: true,
+    // sourcemap: true,
     emptyOutDir: true,
     rollupOptions: {
       output: {
