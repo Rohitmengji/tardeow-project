@@ -1,8 +1,10 @@
+import TarOdewNav from "./TarodewNav";
 
 const BestDeals = () => {
-  return (
-    <div>BestDeals</div>
-  )
-}
+  return <div>
+    <TarOdewNav />
+    <h1>Best Deals Page</h1>
+  </div>;
+};
 
-export default BestDeals
+export default BestDeals;

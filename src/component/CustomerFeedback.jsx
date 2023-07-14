@@ -62,7 +62,7 @@ const CustomerFeedback = () => {
                   <div className='qoute-img'>
                     <img
                       className='d-block'
-                      src='../assets/Group 54.png'
+                      src='../assets/images/Group 54.png'
                       alt='Quote Icon'
                       style={{
                         objectFit: "contain",

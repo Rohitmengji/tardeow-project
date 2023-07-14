@@ -97,7 +97,7 @@ const OilsCard = () => {
   };
 
   return (
-    <div className='container mb-5 '>
+    <div className='mb-4 '>
       <div className='d-flex flex-wrap justify-content-around'>
         {products.map((product, index) => (
           <div
@@ -111,7 +111,9 @@ const OilsCard = () => {
               border='0'
               style={{ boxShadow: "revert-layer" }}
             >
-              <Card.Body className='d-flex flex-column justify-content-between flex align-items-center  relative'>
+              <Card.Body
+                className='d-flex flex-column justify-content-between  align-items-center  relative'
+              >
                 <div className='content-overlay'></div>
                 <div className='text-center'>
                   <Card.Img
@@ -126,7 +128,7 @@ const OilsCard = () => {
                   />
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>{renderStars(product.rating)}</Card.Text>
-                  <Card.Text style={{ marginBottom: "9px", fontSize: "18px" }}>
+                  <Card.Text style={{ fontSize: "18px" }}>
                     Price: {product.price}
                   </Card.Text>
                 </div>

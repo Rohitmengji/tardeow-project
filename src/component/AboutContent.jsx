@@ -2,7 +2,7 @@
 
 const AboutContent = () => {
   return (
-    <div className='container-fluid'>
+    <div className='container'>
       <div className='row'>
         <div className='col-12 col-md-4'>
           <div className='card mt-4 border-0'>

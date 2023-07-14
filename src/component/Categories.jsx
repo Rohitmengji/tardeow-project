@@ -16,7 +16,7 @@ const Categories = () => {
               borderRadius: "15%",
               // background: "transparent 0% 0% no-repeat padding-box",
             }}
-            src='../assets/Coconut-Oil_1L_advitise.jpg'
+            src='../assets/images/Coconut-Oil_1L_advitise.jpg'
             alt='Oils Bottle'
             className='card-image'
           />
@@ -45,7 +45,7 @@ const Categories = () => {
               maxWidth: "95%",
               borderRadius: "15%",
             }}
-            src='../assets/Honey_1kg_advitise.jpg'
+            src='../assets/images/Honey_1kg_advitise.jpg'
             alt='Honey'
             className='card-image'
           />
@@ -73,7 +73,7 @@ const Categories = () => {
               maxWidth: "95%",
               borderRadius: "15%",
             }}
-            src='../assets/Ghee_1Ltr_advitise.jpg'
+            src='../assets/images/Ghee_1Ltr_advitise.jpg'
             alt='Ghee'
             className='card-image'
           />

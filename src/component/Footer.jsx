@@ -53,7 +53,7 @@ const Footer = () => {
             {/* <NavLink to='/' className='mb-3text-decoration-none'> */}
               <img
                 className=' footer-logo'
-                src='../assets/logo.png'
+                src='../assets/images/logo.png'
                 alt='logo'
               />
             {/* </NavLink> */}
@@ -71,8 +71,8 @@ const Footer = () => {
                 <img
                   src={
                     isFacebookHovered
-                      ? "../assets/Icon awesome-facebook-1.png"
-                      : "../assets/Icon awesome-facebook.png"
+                      ? "../assets/images/Icon awesome-facebook-1.png"
+                      : "../assets/images/Icon awesome-facebook.png"
                   }
                   alt='Facebook'
                   onMouseEnter={handleFacebookHover}
@@ -84,8 +84,8 @@ const Footer = () => {
                 <img
                   src={
                     isTwitterHovered
-                      ? "../assets/Icon awesome-twitter-1.png"
-                      : "../assets/Icon awesome-twitter.png"
+                      ? "../assets/images/Icon awesome-twitter-1.png"
+                      : "../assets/images/Icon awesome-twitter.png"
                   }
                   alt='Twitter'
                   onMouseEnter={handleTwitterHover}
@@ -97,8 +97,8 @@ const Footer = () => {
                 <img
                   src={
                     isLinkedInHovered
-                      ? "../assets/Icon awesome-linkedin-in-1.png"
-                      : "../assets/Icon awesome-linkedin-in.png"
+                      ? "../assets/images/Icon awesome-linkedin-in-1.png"
+                      : "../assets/images/Icon awesome-linkedin-in.png"
                   }
                   alt='LinkedIn'
                   onMouseEnter={handleLinkedInHover}
@@ -187,8 +187,8 @@ const Footer = () => {
                       style={{ width: "50px !important" }}
                       src={
                         hoverState.isLocationHovered
-                          ? "../assets/Group 603.png"
-                          : "../assets/Group 44.png"
+                          ? "../assets/images/Group 603.png"
+                          : "../assets/images/Group 44.png"
                       }
                       alt='location'
                       onMouseEnter={() =>
@@ -208,8 +208,8 @@ const Footer = () => {
                     <img
                       src={
                         hoverState.isEmailHovered
-                          ? "../assets/Group 604.png"
-                          : "../assets/Group 45.png"
+                          ? "../assets/images/Group 604.png"
+                          : "../assets/images/Group 45.png"
                       }
                       alt='email'
                       onMouseEnter={() => handleHover("isEmailHovered", true)}
@@ -225,8 +225,8 @@ const Footer = () => {
                     <img
                       src={
                         hoverState.isPhoneNumberHovered
-                          ? "../assets/Group 605.png"
-                          : "../assets/Group 46.png"
+                          ? "../assets/images/Group 605.png"
+                          : "../assets/images/Group 46.png"
                       }
                       alt='phoneNumber'
                       onMouseEnter={() =>

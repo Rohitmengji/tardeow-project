@@ -13,6 +13,7 @@ import OilsCard from "./component/OilsCard";
 import ProductDetails from "./component/ProductDetails";
 import MyCart from "./component/MyCart";
 import { CartProvider } from "./Store/CartContext";
+import BestDeals from "./component/BestDeals";
 
 const App = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -22,12 +23,12 @@ const App = () => {
       <ProductContext.Provider value={{ selectedProduct, setSelectedProduct }}>
         <>
           <Navbar />
-          <Routes>
+          <Routes>  
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/contact' element={<Contact />} />
-
+            <Route path="/best-deals" element={<BestDeals />} />
             <Route path='/oils' element={<Oils />} />
             <Route path='/honey' element={<Honey />} />
             <Route path='/ghee' element={<Ghee />} />

@@ -1,39 +1,13 @@
-import { useContext } from "react";
-import { CartContext } from "../Store/CartContext";
-import { Button, Card, ListGroup } from "react-bootstrap";
+import TarOdewNav from "./TarodewNav"
 
 const MyCart = () => {
-  const { cart, removeFromCart } = useContext(CartContext);
-
-  const total = cart.reduce(
-    (total, cartItem) =>
-      total + cartItem.product.price * parseInt(cartItem.quantity),
-    0
-  );
-
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Header>My Cart</Card.Header>
-      <ListGroup variant='flush'>
-        {cart.map((cartItem, index) => (
-          <ListGroup.Item key={index}>
-            {cartItem.product.name} - {cartItem.product.price} x{" "}
-            {cartItem.quantity}
-            <Button
-              variant='danger'
-              size='sm'
-              onClick={() => removeFromCart(cartItem.product)}
-            >
-              Remove
-            </Button>
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
-      <Card.Footer>
-        <strong>Total Price: </strong>₹{total}
-      </Card.Footer>
-    </Card>
-  );
-};
+    <div>
+      <TarOdewNav />
+      <h1>My cart</h1>
+    </div>
+    
+  )
+}
 
-export default MyCart;
+export default MyCart

@@ -25,37 +25,37 @@ function FlagshipProduct() {
       name: "Desi Cow Ghee",
       rating: 5,
       price: "₹650",
-      image: "../assets/Ghee_1Ltr_bottlee.jpg",
+      image: "../assets/images/Ghee_1Ltr_bottlee.jpg",
     },
     {
       name: "Honey",
       rating: 4,
       price: "₹500",
-      image: "../assets/Honey_1kg_Bottlee.jpg",
+      image: "../assets/images/Honey_1kg_Bottlee.jpg",
     },
     {
       name: "Cocunut Oil",
       rating: 4.5,
       price: "₹290",
-      image: "../assets/coconut-oil.webp",
+      image: "../assets/images/coconut-oil.webp",
     },
     {
       name: "Groundnut Oil",
       rating: 4.5,
       price: "₹290",
-      image: "../assets/groundnutoil.jpg",
+      image: "../assets/images/groundnutoil.jpg",
     },
     {
       name: "Mustard Oil",
       rating: 4,
       price: "₹290",
-      image: "../assets/mustard-oil.webp",
+      image: "../assets/images/mustard-oil.webp",
     },
     {
       name: "Groundnut Oil",
       rating: 4,
       price: "₹290",
-      image: "../assets/groundnutoil.jpg",
+      image: "../assets/images/groundnutoil.jpg",
     },
 
     // Add more products here

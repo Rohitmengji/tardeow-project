@@ -13,19 +13,35 @@ function ProductDetailsBreadCrumb() {
         style={{ "--bs-breadcrumb-divider": ">", marginTop: "6rem" }}
         aria-label='breadcrumb'
       >
-        <h1 className='brown fw-bolder '>PRODUCT DETAILS</h1>
-        <ol className='breadcrumb justify-content-center fs-4'>
-          <li className='breadcrumb-item '>
-            <NavLink className={"nav-link fw-medium"} to='/'>
-              Home{" > "}
-            </NavLink>
-          </li>
-          <li className='breadcrumb-item active' aria-current='page'>
-            <NavLink to={"/productDetails"} className={"fw-medium nav-link "}>
-              Product Details
-            </NavLink>
-          </li>
-        </ol>
+        <div
+          style={{
+            transform: "translate(10px, -71px)",
+            fontFamily: "Titillium Web",
+          }}
+        >
+          <h1
+            style={{
+              color: "#5F272C",
+              textAlign: "center",
+              fontWeight: "900 ",
+              lineHeight: "1",
+            }}
+          >
+            PRODUCT DETAILS
+          </h1>
+          <ol className='breadcrumb justify-content-center fs-4'>
+            <li className='breadcrumb-item '>
+              <NavLink className={"nav-link fw-medium"} to='/'>
+                Home{" > "}
+              </NavLink>
+            </li>
+            <li className='breadcrumb-item active' aria-current='page'>
+              <NavLink to={"/productDetails"} className={"fw-medium nav-link "}>
+                Product Details
+              </NavLink>
+            </li>
+          </ol>
+        </div>
       </nav>
     </div>
   );

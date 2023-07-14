@@ -5,8 +5,9 @@ const BulkOrderSection = () => {
         <div className='row'>
           <div className='col-12 p-0 position-relative'>
             <img
+              loading='lazy'
               style={{ objectFit: "cover", width: "100%", height: "336px" }}
-              src='../assets/Group 601.jpg'
+              src='../assets/images/Group 601.jpg'
               alt='Background'
               className='w-100'
             />
@@ -28,10 +29,10 @@ const BulkOrderSection = () => {
                 className='btn btn-success mx-1 mt-2'
                 style={{
                   background: "#456D33",
-                  fontFamily:'Open Sans',
+                  fontFamily: "Open Sans",
                   backgroundPosition: "0% 0%",
-                  width: '124px',
-                  height: '45px',
+                  width: "124px",
+                  height: "45px",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "padding-box",
                   borderRadius: "5px",

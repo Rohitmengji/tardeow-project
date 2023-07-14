@@ -4,18 +4,18 @@ const CircleCard = () => {
   const circleCards = [
     {
       name: "Traditional",
-      imageSrc: "../assets/Group 593.png",
-      hoverImageSrc: "../assets/Group 594.png",
+      imageSrc: "../assets/images/Group 593.png",
+      hoverImageSrc: "../assets/images/Group 594.png",
     },
     {
       name: "Natural",
-      imageSrc: "../assets/Group 595.png",
-      hoverImageSrc: "../assets/Group 596.png",
+      imageSrc: "../assets/images/Group 595.png",
+      hoverImageSrc: "../assets/images/Group 596.png",
     },
     {
       name: "No Refining",
-      imageSrc: "../assets/Group 597.png",
-      hoverImageSrc: "../assets/Group 598.png",
+      imageSrc: "../assets/images/Group 597.png",
+      hoverImageSrc: "../assets/images/Group 598.png",
     },
   ];
 

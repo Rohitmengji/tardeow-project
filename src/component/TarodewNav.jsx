@@ -1,43 +1,41 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "../styles/InsideNav.css";
+import { NavLink, useLocation } from "react-router-dom";
 import AboutBreadcrumb from "./AboutBreadcrumb";
 import OilsBreadcrumb from "./OilsBreadCrumb";
 import HoneyBreadCrumb from "./HoneyBreadCrumb";
 import ProductDetailsBreadCrumb from "./ProductDetailsBreadCrumb";
 import { Container } from "react-bootstrap";
+import "../styles/TarodewNav.css";
 
 function TarOdewNav() {
-  const logo = "../assets/logo.png";
+  const logo = "../assets/images/logo.png";
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const [searchIcon, setSearchIcon] = useState("../assets/top-ios-search.png");
-  const [userIcon, setUserIcon] = useState("../assets/top-user.png");
-  const [cartIcon, setCartIcon] = useState("../assets/top-shopping-cart.png");
+  const [searchIcon, setSearchIcon] = useState("../assets/images/top-ios-search.png");
+  const [userIcon, setUserIcon] = useState("../assets/images/top-user.png");
+  const [cartIcon, setCartIcon] = useState("../assets/images/top-shopping-cart.png");
+  const location = useLocation();
 
   const handleToggle = () => {
     setIsCollapsed(!isCollapsed);
     if (isCollapsed) {
-      setSearchIcon("../assets/Icon ionic-ios-search-1.png");
-      setUserIcon("../assets/user.png");
-      setCartIcon("../assets/Icon feather-shopping-cart-1.png");
+      setSearchIcon("../assets/images/Icon ionic-ios-search-1.png");
+      setUserIcon("../assets/images/user.png");
+      setCartIcon("../assets/images/Icon feather-shopping-cart-1.png");
     } else {
-      setSearchIcon("../assets/top-ios-search.png");
-      setUserIcon("../assets/top-user.png");
-      setCartIcon("../assets/top-shopping-cart.png");
+      setSearchIcon("../assets/images/top-ios-search.png");
+      setUserIcon("../assets/images/top-user.png");
+      setCartIcon("../assets/images/top-shopping-cart.png");
     }
   };
-  const isAboutPage = window.location.pathname === "/about"; // Check if the current page is the "About" page
 
-  const isOilspage = window.location.pathname === "/oils";
-
-  const isHoneypage = window.location.pathname === "/honey";
-
-  const isProductPage = window.location.pathname === "/productDetails";
-
+  const isAboutPage = location.pathname === "/about";
+  const isOilspage = location.pathname === "/oils";
+  const isHoneypage = location.pathname === "/honey";
+  const isProductPage = location.pathname === "/productDetails";
   return (
     <div className='TarOdew p-1 overflow-hidden'>
       <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color'>
-        <Container fluid>
+        <Container>
           <NavLink className='navbar-brand' to='/'>
             <img src={logo} alt='Tarodew' />
           </NavLink>
@@ -111,7 +109,7 @@ function TarOdewNav() {
           </div>
         </Container>
       </nav>
-      <div>
+      <div className='fixed-image'>
         {isAboutPage && <AboutBreadcrumb />}
         {isOilspage && <OilsBreadcrumb />}
         {isHoneypage && <HoneyBreadCrumb />}

@@ -9,9 +9,15 @@
 
 @media (min-width : 1440px) {
 .carousel-dots{
-    padding-right: 20rem;
+    transform: translate(-140px);
+}
 }
 
+
+@media (min-width : 1024px) {
+.carousel-dots{
+    transform: translate(-55px);
+}
 }
 
 
