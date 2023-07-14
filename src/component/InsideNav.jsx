@@ -36,7 +36,7 @@ function InsideNav() {
       <div className=' TarOdew overflow-hidden '>
         <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color '>
           <div className='container'>
-            <NavLink className='navbar-brand' to='/tarodew-build'>
+            <NavLink className='navbar-brand' to='/'>
               <img src={logo} alt='Tarodew' />
             </NavLink>
 

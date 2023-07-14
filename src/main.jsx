@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/build'>
       <App />
     </BrowserRouter>
   </React.StrictMode>

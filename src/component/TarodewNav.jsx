@@ -38,7 +38,7 @@ function TarOdewNav() {
     <div className='TarOdew p-1 overflow-hidden'>
       <nav className='navbar navbar-expand-lg navbar-expand-md navbar-light bg-color'>
         <Container fluid>
-          <NavLink className='navbar-brand' to='/tarodew-build'>
+          <NavLink className='navbar-brand' to='/'>
             <img src={logo} alt='Tarodew' />
           </NavLink>
 
